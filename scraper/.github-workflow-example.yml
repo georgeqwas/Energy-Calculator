@@ -1,0 +1,27 @@
+# Αντέγραψέ το σε .github/workflows/tariffs.yml στο repo σου.
+name: Sync energy tariffs (ΡΑΑΕΥ)
+
+on:
+  schedule:
+    - cron: "0 6 2 * *"   # 06:00 UTC, στις 2 κάθε μήνα
+  workflow_dispatch: {}     # χειροκίνητη εκτέλεση από το UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install -r scraper/requirements.txt
+      - name: Fetch tariffs
+        run: cd scraper && python fetch_tariffs.py
+      - name: Commit updated data
+        run: |
+          git config user.name "tariffs-bot"
+          git config user.email "bot@biznest.gr"
+          git add data/tariffs.json data/tariffs.js scraper/providers.json
+          git commit -m "chore: monthly tariff sync ($(date +%Y-%m))" || echo "no changes"
+          git push

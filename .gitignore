@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+scraper/.venv/
+
+# Scraper προσωρινά / debug
+scraper/_debug/
+scraper/dump/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Node (αν προστεθεί build αργότερα)
+node_modules/

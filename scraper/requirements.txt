@@ -1,0 +1,7 @@
+requests>=2.31
+pandas>=2.0
+lxml>=4.9
+beautifulsoup4>=4.12
+html5lib>=1.1
+# Προαιρετικά — μόνο αν ο πίνακας είναι JS-rendered (δες README.md):
+# playwright>=1.44

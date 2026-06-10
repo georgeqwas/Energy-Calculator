@@ -1,0 +1,77 @@
+{
+  "ΔΕΗ": {
+    "slug": "dei",
+    "color": "#1a3e6f",
+    "domain": "dei.gr"
+  },
+  "PROTERGIA": {
+    "slug": "protergia",
+    "color": "#5fa436",
+    "domain": "protergia.gr"
+  },
+  "ΗΡΩΝ": {
+    "slug": "heron",
+    "color": "#e2231a",
+    "domain": "heron.gr"
+  },
+  "NRG": {
+    "slug": "nrg",
+    "color": "#e6007e",
+    "domain": "nrg.gr"
+  },
+  "VOLTON": {
+    "slug": "volton",
+    "color": "#0072bc",
+    "domain": "volton.gr"
+  },
+  "ΖΕΝΙΘ": {
+    "slug": "zenith",
+    "color": "#00a651",
+    "domain": "zenith.gr"
+  },
+  "ΕΛΙΝΟΙΛ": {
+    "slug": "elin",
+    "color": "#d2232a",
+    "domain": "elin.gr"
+  },
+  "VOLTERRA": {
+    "slug": "volterra",
+    "color": "#00857d",
+    "domain": "volterra.gr"
+  },
+  "ELPEDISON": {
+    "slug": "elpedison",
+    "color": "#0096a9",
+    "domain": "elpedison.gr"
+  },
+  "EUNICE": {
+    "slug": "eunice",
+    "color": "#004a99",
+    "domain": "eunice-group.com"
+  },
+  "ENERWAVE": {
+    "slug": "enerwave",
+    "color": "#f7941e",
+    "domain": "enerwave.gr"
+  },
+  "OTE ESTATE": {
+    "slug": "ote-estate",
+    "color": "#5a2d82",
+    "domain": "ote.gr"
+  },
+  "SOLAR ENERGY": {
+    "slug": "solar-energy",
+    "color": "#f5a623",
+    "domain": ""
+  },
+  "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ": {
+    "slug": "fysiko-aerio-ellados",
+    "color": "#e30613",
+    "domain": "fysikoaerioellados.gr"
+  },
+  "EFA ENERGY": {
+    "slug": "efa-energy",
+    "color": "#5b5b64",
+    "domain": ""
+  }
+}
