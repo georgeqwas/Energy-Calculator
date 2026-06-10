@@ -33,11 +33,11 @@ GitHub repo → **Settings → Collaborators → Add people** → βάλε τα 
 - repo → **Settings → Pages**
 - Source: **Deploy from a branch** → Branch `main` → φάκελος `/(root)` → **Save**
 - Σε ~1 λεπτό θα είναι live στο:
-  `https://<username>.github.io/biznest-energy/prototype.html`
+  `https://<username>.github.io/Energy-Calculator/`
 
 > Προσοχή: στο GitHub Pages ο κώδικας είναι **δημόσια ορατός** (το Pages δεν δουλεύει σε
 > private repos στο δωρεάν πλάνο). Αν θες να μείνει ιδιωτικό, μοίρασέ το ως private repo
-> (βήμα 4) και οι συνεργάτες ανοίγουν τοπικά το `prototype.html`, ή χρησιμοποίησε
+> (βήμα 4) και οι συνεργάτες ανοίγουν τοπικά το `index.html`, ή χρησιμοποίησε
 > ιδιωτικό hosting. Μπορώ να σε βοηθήσω να διαλέξεις.
 
 ## Κάθε φορά που αλλάζει κάτι
