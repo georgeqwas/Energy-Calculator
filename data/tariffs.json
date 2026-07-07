@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07 16:36",
+  "generated_at": "2026-07-07 21:11",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -3286,6 +3286,22 @@
         "duration": "12",
         "notes": "Δώρο 50 € πίστωση στον 1ο λογαριασμό για νέους πελάτες και για υφιστάμενους που επιλέγουν το συγκεκριμένο προϊόν.",
         "available": false
+      },
+      {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Business Direct Plus",
+        "type": "fixed",
+        "fixed": 9.9,
+        "rate": 0.148,
+        "rate_base": 0.268,
+        "fixed_base": 9.9,
+        "fixed_disc": 9.9,
+        "rate_disc": 0.148,
+        "has_discount": true,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "Έκπτωση Συνέπειας 44,78%",
+        "available": true
       },
       {
         "prov": "VOLTON",
