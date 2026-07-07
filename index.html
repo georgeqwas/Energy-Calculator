@@ -233,7 +233,7 @@
       <div class="seg sm" id="use"><button class="active" data-u="home">Οικιακό</button><button data-u="biz">Επαγγελματικό</button></div>
     </div>
     <div class="ctrl"><label>Μηνιαία κατανάλωση (kWh)</label><input type="number" id="kwh" value="300" min="0" step="10"></div>
-    <div class="ctrl"><label>Τιμολόγιο πελάτη</label><button class="clientbtn" id="clientBtn"><i class="ti ti-file-invoice"></i><span id="clientLbl">— μη ορισμένο —</span><i class="ti ti-chevron-down"></i></button></div>
+    <div class="ctrl"><label>Λογαριασμός πελάτη</label><button class="clientbtn" id="clientBtn"><i class="ti ti-file-invoice"></i><span id="clientLbl">— μη ορισμένο —</span><i class="ti ti-chevron-down"></i></button></div>
     <div class="ctrl"><label>Ταξινόμηση</label>
       <select id="sort"><option value="cost">Μηνιαίο κόστος ↑</option><option value="kwh">Τιμή κιλοβατώρας ↑</option><option value="fixed">Πάγιο/μήνα ↑</option></select>
     </div>
@@ -243,7 +243,7 @@
   </div>
 
   <div class="client" id="client">
-    <div class="ch"><i class="ti ti-file-invoice"></i><h3>Τρέχον τιμολόγιο πελάτη</h3><span class="hint">για υπολογισμό πραγματικής εξοικονόμησης</span><button class="cclear" id="clientClear">Καθαρισμός</button></div>
+    <div class="ch"><i class="ti ti-file-invoice"></i><h3>Τρέχων λογαριασμός πελάτη</h3><span class="hint">για υπολογισμό πραγματικής εξοικονόμησης</span><button class="cclear" id="clientClear">Καθαρισμός</button></div>
     <div class="row">
       <div class="ctrl"><label>Τρέχων πάροχος</label><select id="cur" style="min-width:170px"></select></div>
       <div class="ctrl"><label>Τελική τιμή (€/kWh)</label><input type="text" inputmode="decimal" id="curRate" placeholder="π.χ. 0,1485"></div>
@@ -255,12 +255,13 @@
       <div class="row">
         <div class="ctrl"><label>Σύνολο χρεώσεων προμήθειας (€)</label><input type="text" inputmode="decimal" id="bTotal" placeholder="π.χ. 45,86"></div>
         <div class="ctrl"><label>Πάγια χρέωση λογαριασμού (€)</label><input type="text" inputmode="decimal" id="bFixed" placeholder="π.χ. 5,32"></div>
+        <div class="ctrl"><label>Έκπτωση (€)</label><input type="text" inputmode="decimal" id="bDisc" placeholder="π.χ. 1,13"></div>
         <div class="ctrl"><label>Κατανάλωση περιόδου (kWh)</label><input type="text" inputmode="decimal" id="bKwh" placeholder="π.χ. 273"></div>
         <div class="ctrl"><label>Ημέρες περιόδου</label><input type="text" inputmode="decimal" id="bDays" placeholder="π.χ. 29"></div>
       </div>
       <div class="billout" id="billOut"><span class="dim">Συμπλήρωσε τα ποσά από την ενότητα «Χρεώσεις Προμήθειας» του λογαριασμού…</span></div>
     </div>
-    <p class="cnote">Τελική τιμή = (σύνολο χρεώσεων προμήθειας − πάγια χρέωση) ÷ kWh περιόδου — περιλαμβάνει διακύμανση/ρήτρα και εκπτώσεις. Οι ρυθμιζόμενες χρεώσεις, δήμος, ΕΡΤ και ΦΠΑ είναι ~ίδιες σε όλους τους παρόχους και δεν επηρεάζουν τη σύγκριση. Η εγγύηση παραμένει στον τρέχοντα πάροχο και επιστρέφεται/συμψηφίζεται στον τελευταίο λογαριασμό.</p>
+    <p class="cnote">Τελική τιμή = (σύνολο χρεώσεων προμήθειας − πάγια χρέωση − έκπτωση) ÷ kWh περιόδου — περιλαμβάνει διακύμανση/ρήτρα. Συμπλήρωσε την έκπτωση <b>μόνο αν δεν περιλαμβάνεται ήδη</b> στο σύνολο που έβαλες (π.χ. αν άθροισες τις γραμμές πριν την έκπτωση, ή αν εμφανίζεται χωριστά όπως η «έκπτωση εμπρόθεσμης»). Οι ρυθμιζόμενες χρεώσεις, δήμος, ΕΡΤ και ΦΠΑ είναι ~ίδιες σε όλους τους παρόχους και δεν επηρεάζουν τη σύγκριση. Η εγγύηση παραμένει στον τρέχοντα πάροχο και επιστρέφεται/συμψηφίζεται στον τελευταίο λογαριασμό.</p>
   </div>
 
   <div style="margin-top:14px"><button class="mobtoggle" id="mobF"><i class="ti ti-adjustments-horizontal"></i> Φίλτρα</button></div>
@@ -371,7 +372,7 @@ function render(){
   const sm=$("#summary"),best=data.length?data.reduce((a,b)=>a.m<=b.m?a:b):null;
   const dep=st.curDep>0?` Εγγύηση ${fmt(st.curDep)}€ στον τρέχοντα πάροχο — επιστρέφεται/συμψηφίζεται στον τελευταίο λογαριασμό.`:"";
   if(exact&&best&&curM-best.m>0){sm.className="summary show";sm.innerHTML=`<div class="ic"><i class="ti ti-trending-down"></i></div><div><div class="big">${fmt(curM-best.m)}€/μήνα πραγματική εξοικονόμηση</div><div class="sub">Τρέχον κόστος ~<b>${fmt(curM)}€/μήνα</b>${st.cur?` (${st.cur})`:""} βάσει λογαριασμού → <b>${best.d.prov} · ${best.d.name}</b> ~${fmt(best.m)}€ — ~${fmt((curM-best.m)*12)}€ τον χρόνο.${dep}</div></div>`;}
-  else if(exact&&best){sm.className="summary show";sm.innerHTML=`<div class="ic" style="background:var(--blue-soft);color:var(--blue)"><i class="ti ti-circle-check"></i></div><div><div class="big" style="color:var(--blue)">Το τρέχον τιμολόγιο είναι ήδη πιο συμφέρον</div><div class="sub">~<b>${fmt(curM)}€/μήνα</b> βάσει λογαριασμού, έναντι ${fmt(best.m)}€ της καλύτερης εναλλακτικής (${best.d.prov} · ${best.d.name}).${dep}</div></div>`;}
+  else if(exact&&best){sm.className="summary show";sm.innerHTML=`<div class="ic" style="background:var(--blue-soft);color:var(--blue)"><i class="ti ti-circle-check"></i></div><div><div class="big" style="color:var(--blue)">Ο τρέχων λογαριασμός είναι ήδη πιο συμφέρων</div><div class="sub">~<b>${fmt(curM)}€/μήνα</b> βάσει λογαριασμού, έναντι ${fmt(best.m)}€ της καλύτερης εναλλακτικής (${best.d.prov} · ${best.d.name}).${dep}</div></div>`;}
   else if(best&&curM!=null&&best.d.prov!==st.cur&&curM-best.m>0){sm.className="summary show";sm.innerHTML=`<div class="ic"><i class="ti ti-trending-down"></i></div><div><div class="big">Έως ${fmt(curM-best.m)}€/μήνα εξοικονόμηση</div><div class="sub">Από <b>${st.cur}</b> σε <b>${best.d.prov} · ${best.d.name}</b> — ~${fmt((curM-best.m)*12)}€ τον χρόνο. <i>Εκτίμηση: συγκρίνεται το φθηνότερο καταχωρημένο τιμολόγιο του παρόχου — βάλε τα στοιχεία του λογαριασμού για ακριβή υπολογισμό.</i></div></div>`;}
   else if(curM!=null&&best&&best.d.prov===st.cur){sm.className="summary show";sm.innerHTML=`<div class="ic" style="background:var(--blue-soft);color:var(--blue)"><i class="ti ti-circle-check"></i></div><div><div class="big" style="color:var(--blue)">Ήδη στο πιο συμφέρον</div><div class="sub">Ο <b>${st.cur}</b> είναι ήδη η φθηνότερη επιλογή.</div></div>`;}
   else sm.className="summary";
@@ -441,19 +442,19 @@ $("#curRate").oninput=e=>{st.curRate=pf(e.target.value);clientLbl();render();};
 $("#curFixed").oninput=e=>{st.curFixed=pf(e.target.value);clientLbl();render();};
 $("#curDep").oninput=e=>{st.curDep=pf(e.target.value);render();};
 function clearClient(){st.cur="";st.curRate=st.curFixed=st.curDep=null;
-  ["curRate","curFixed","curDep","bTotal","bFixed","bKwh","bDays"].forEach(id=>$("#"+id).value="");
+  ["curRate","curFixed","curDep","bTotal","bFixed","bDisc","bKwh","bDays"].forEach(id=>$("#"+id).value="");
   $("#cur").value="";$("#billOut").innerHTML='<span class="dim">Συμπλήρωσε τα ποσά από την ενότητα «Χρεώσεις Προμήθειας» του λογαριασμού…</span>';clientLbl();}
 $("#clientClear").onclick=()=>{clearClient();render();};
-/* τελική τιμή = (σύνολο χρεώσεων προμήθειας − πάγιο) ÷ kWh περιόδου· αναγωγή παγίου & kWh σε μήνα (30,44 ημέρες) */
-function billCalc(){const t=pf($("#bTotal").value),f=pf($("#bFixed").value),k=pf($("#bKwh").value),d=pf($("#bDays").value),out=$("#billOut");
+/* τελική τιμή = (σύνολο χρεώσεων προμήθειας − πάγιο − έκπτωση) ÷ kWh περιόδου· αναγωγή παγίου & kWh σε μήνα (30,44 ημέρες) */
+function billCalc(){const t=pf($("#bTotal").value),f=pf($("#bFixed").value),disc=Math.abs(pf($("#bDisc").value)||0),k=pf($("#bKwh").value),d=pf($("#bDays").value),out=$("#billOut");
   if(!(t>0)||f==null||!(k>0)){out.innerHTML='<span class="dim">Συμπλήρωσε τα ποσά από την ενότητα «Χρεώσεις Προμήθειας» του λογαριασμού…</span>';return;}
-  const rate=(t-f)/k;
-  if(rate<=0){out.innerHTML='<span class="dim" style="color:var(--brand)">Έλεγξε τα ποσά — το σύνολο πρέπει να είναι μεγαλύτερο από το πάγιο.</span>';return;}
+  const rate=(t-f-disc)/k;
+  if(rate<=0){out.innerHTML='<span class="dim" style="color:var(--brand)">Έλεγξε τα ποσά — το σύνολο πρέπει να είναι μεγαλύτερο από πάγιο + έκπτωση.</span>';return;}
   const mf=d>0?f/d*30.44:f, mk=d>0?k/d*30.44:k;
   out.innerHTML=`<i class="ti ti-arrow-right" style="color:var(--brand)"></i> Τελική τιμή <b>${f3(rate)} €/kWh</b> · πάγιο <b>${f2(mf)} €/μήνα</b> · κατανάλωση ~<b>${fmt(mk)} kWh/μήνα</b> <button id="billUse"><i class="ti ti-check"></i> Χρήση στη σύγκριση</button>`;
   $("#billUse").onclick=()=>{st.curRate=rate;st.curFixed=mf;st.kwh=Math.round(mk);
     $("#curRate").value=f3(rate);$("#curFixed").value=f2(mf);$("#kwh").value=st.kwh;clientLbl();render();};}
-["bTotal","bFixed","bKwh","bDays"].forEach(id=>$("#"+id).oninput=billCalc);
+["bTotal","bFixed","bDisc","bKwh","bDays"].forEach(id=>$("#"+id).oninput=billCalc);
 $("#mobF").onclick=()=>{$("#side").classList.add("open");$("#scrim").classList.add("open");};
 $("#scrim").onclick=()=>{$("#side").classList.remove("open");$("#scrim").classList.remove("open");};
 function onCat(){st.types.clear();st.provs.clear();st.offers.clear();st.limit=24;st.kwh=DEF_KWH[catKey()];$("#kwh").value=st.kwh;CMP.clear();bar();clearClient();fillCur();buildSidebar();animateNext=true;skeleton();setTimeout(render,300);}
