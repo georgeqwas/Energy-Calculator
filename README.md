@@ -26,7 +26,13 @@ logo/                 # logos BizNest
 ΟΔΗΓΙΕΣ.md            # runbook για μη-τεχνικούς
 ```
 
-## Ενημέρωση δεδομένων (μηνιαία)
+## Ενημέρωση δεδομένων
+
+Αυτόματα: το GitHub Action `.github/workflows/tariffs.yml` τρέχει **καθημερινά**
+(04:30 UTC) και κάνει commit μόνο όταν τα τιμολόγια όντως αλλάξουν. On-demand:
+GitHub → Actions → «Sync energy tariffs (ΡΑΑΕΥ)» → Run workflow.
+
+Χειροκίνητα (τοπικά):
 
 ```bash
 cd scraper

@@ -1,0 +1,71 @@
+# Καθημερινός συγχρονισμός τιμολογίων από ΡΑΑΕΥ / energycost.gr.
+# Δημοσιεύει μόνο αν τα δεδομένα πέρασαν validation ΚΑΙ άλλαξαν πραγματικά
+# (αγνοώντας το timestamp), ώστε ούτε σπασμένο scrape ούτε άσκοπα commits.
+# Χειροκίνητο τρέξιμο: Actions → Sync energy tariffs → Run workflow.
+name: Sync energy tariffs (ΡΑΑΕΥ)
+
+on:
+  schedule:
+    - cron: "30 4 * * *"   # 04:30 UTC καθημερινά (~07:30 Ελλάδα)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install -r scraper/requirements.txt playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Fetch tariffs
+        run: cd scraper && python fetch_tariffs.py --browser
+
+      - name: Validate data
+        run: |
+          python - <<'EOF'
+          import json
+          d = json.load(open('data/tariffs.json'))
+          assert not d.get('is_sample'), 'is_sample=true — δεν δημοσιεύουμε δείγμα'
+          mins = {'power_home': 20, 'power_biz': 20, 'gas_home': 10, 'gas_biz': 5}
+          for k, m in mins.items():
+              n = len(d['categories'].get(k, []))
+              print(f'{k}: {n} τιμολόγια')
+              assert n >= m, f'{k}: μόνο {n} (<{m}) — πιθανό σπασμένο scrape, ακύρωση'
+          EOF
+
+      - name: Check for real changes (ignore timestamp)
+        id: diff
+        run: |
+          python - <<'EOF'
+          import json, subprocess, os
+          def norm(txt):
+              d = json.loads(txt); d.pop('generated_at', None)
+              return json.dumps(d, sort_keys=True, ensure_ascii=False)
+          old = subprocess.run(['git', 'show', 'HEAD:data/tariffs.json'],
+                               capture_output=True, text=True).stdout
+          new = open('data/tariffs.json').read()
+          changed = norm(old) != norm(new)
+          print('changed:', changed)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write('changed=' + ('true' if changed else 'false') + '\n')
+          EOF
+
+      - name: Commit updated data
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "tariffs-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/tariffs.json data/tariffs.js
+          git commit -m "chore: tariff sync ($(date -u +%Y-%m-%d))"
+          git push
