@@ -132,7 +132,7 @@
   .plogo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:5px}
   .cmpchk{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-3);cursor:pointer;user-select:none}
   .cmpchk input{width:15px;height:15px;accent-color:var(--brand);cursor:pointer}
-  .obadge{position:absolute;top:14px;right:14px;font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:6px;background:var(--brand-soft);color:var(--brand);border:1px solid var(--brand-line)}
+  .obadge{font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:6px;background:var(--brand-soft);color:var(--brand);border:1px solid var(--brand-line);white-space:nowrap}
   .pname{font-size:15.5px;font-weight:600;line-height:1.3;min-height:40px}
   .tlabel{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:6px;width:fit-content}
   .t-fixed{background:var(--blue-soft);color:var(--blue)} .t-float{background:var(--amber-soft);color:var(--amber)} .t-special{background:var(--green-soft);color:var(--green)} .t-none{background:var(--bg);color:var(--ink-3)}
@@ -389,17 +389,16 @@ function saveOf(x,curM){const exact=clientM()!=null;
 
 function renderGrid(data,cheapest,curM){
   const slice=data.slice(0,st.limit);
-  $("#results").innerHTML=`<div class="grid${animateNext?' anim':''}">`+slice.map(x=>{const d=x.d,tl=TL[x.t];
+  $("#results").innerHTML=`<div class="grid${animateNext?' anim':''}">`+slice.map((x,i)=>{const d=x.d,tl=TL[x.t];
     return `<div class="card ${Math.abs(x.m-cheapest)<1e-9?'best':''}">
-      ${badgeOf(x,cheapest)}
-      <div class="chead">${logo(d.prov)}<label class="cmpchk"><input type="checkbox" data-p="${d.prov}|${d.name}" ${CMP.has(d.prov+'|'+d.name)?'checked':''}> Σύγκριση</label></div>
+      <div class="chead">${logo(d.prov)}<div style="margin-left:auto;display:flex;align-items:center;gap:8px">${badgeOf(x,cheapest)}<label class="cmpchk"><input type="checkbox" data-p="${d.prov}|${d.name}" ${CMP.has(d.prov+'|'+d.name)?'checked':''}> Σύγκριση</label></div></div>
       <div class="pname">${d.name||d.prov}</div>
       <span class="tlabel ${tl[1]}">${d.prov} · ${tl[0]}</span>
       <div class="prices"><div class="pbox"><div class="v">${f3(d.rate)}€</div><div class="u">/kWh</div></div><div class="pbox"><div class="v">${f2(d.fixed)}€</div><div class="u">πάγιο/μήνα</div></div></div>
       <div class="mcost"><span class="lab">Εκτιμ. μηνιαίο κόστος</span><span class="v">${fmt(x.m)}€</span></div>
       ${saveOf(x,curM)}
       <div class="foots">${d.disc_cond?'* '+d.disc_cond:(d.duration?'Διάρκεια: '+d.duration:'')}</div>
-      <div class="cact"><button class="cbtn" onclick='alert(${JSON.stringify(detail(d,x))})'><i class="ti ti-info-circle"></i> Λεπτομέρειες</button><button class="cbtn pri" onclick='copyOne(${JSON.stringify(d.prov+" · "+d.name)})'><i class="ti ti-copy"></i> Αντιγραφή</button></div>
+      <div class="cact"><button class="cbtn" onclick='alert(${JSON.stringify(detail(d,x))})'><i class="ti ti-info-circle"></i> Λεπτομέρειες</button><button class="cbtn pri" onclick='cmpCur(${i})'><i class="ti ti-git-compare"></i> vs τρέχων</button></div>
     </div>`;}).join("")+'</div>'+(data.length>st.limit?`<button class="more" id="more">Δείξε όλα (${data.length})</button>`:"");
   if($("#more"))$("#more").onclick=()=>{st.limit=9999;animateNext=false;render();};
   animateNext=false; bindCmp();
@@ -415,7 +414,20 @@ function renderTable(data,cheapest,curM){
   animateNext=false; bindCmp();
 }
 function detail(d,x){return `${d.prov} · ${d.name}\n\nΤιμή κιλοβατώρας: ${f3(d.rate)} €/kWh\nΠάγιο: ${f2(d.fixed)} €/μήνα\nΕκτιμ. μηνιαίο κόστος (${st.kwh} kWh): ${fmt(x.m)}€\nΔιάρκεια: ${d.duration||'—'}\n${d.disc_cond?'Έκπτωση: '+d.disc_cond+'\n':''}${d.notes?'\nΠαρατηρήσεις: '+d.notes:''}`;}
-function copyOne(t){navigator.clipboard?.writeText("BizNest · "+t);}
+/* Σύγκριση καρτέλας με τον τρέχοντα λογαριασμό του πελάτη */
+function cmpCur(i){const x=VIEW[i];if(!x)return;const cm=clientM();
+  if(cm==null){const c=$("#client");c.classList.add("show");c.scrollIntoView({behavior:"smooth",block:"center"});$("#curRate").focus();return;}
+  const d=x.d,curName=st.cur||"Τρέχων πάροχος";
+  const rows=[["Τιμή €/kWh",f3(st.curRate)+"€",f3(d.rate)+"€",st.curRate,d.rate],
+    ["Πάγιο/μήνα",f2(st.curFixed||0)+"€",f2(d.fixed||0)+"€",st.curFixed||0,d.fixed||0],
+    [`Μηνιαίο κόστος (${fmt(st.kwh)} kWh)`,fmt(cm)+"€",fmt(x.m)+"€",cm,x.m],
+    ["Ετήσιο κόστος",fmt(cm*12)+"€",fmt(x.m*12)+"€",cm*12,x.m*12]];
+  const s=cm-x.m;
+  let h=`<thead><tr><th class="rl"></th><th><div class="tprov">${logo(curName)}<div><div style="font-weight:600">${curName}</div><div style="font-size:11.5px;color:var(--ink-3)">Τρέχων λογαριασμός</div></div></div></th><th><div class="tprov">${logo(d.prov)}<div><div style="font-weight:600">${d.prov}</div><div style="font-size:11.5px;color:var(--ink-3)">${d.name}</div></div></div></th></tr></thead><tbody>`;
+  rows.forEach(r=>{const w1=r[3]<r[4]-1e-9,w2=r[4]<r[3]-1e-9;h+=`<tr><td class="rl">${r[0]}</td><td class="${w1?'win':''}">${r[1]}</td><td class="${w2?'win':''}">${r[2]}</td></tr>`;});
+  h+=`<tr><td class="rl">Διαφορά</td><td colspan="2" style="font-weight:700;color:${s>0?'var(--pos)':'var(--ink-2)'}">${s>0?`−${fmt(s)}€/μήνα · −${fmt(s*12)}€/χρόνο με αλλαγή σε ${d.prov} · ${d.name}`:s<0?`+${fmt(-s)}€/μήνα ακριβότερο — ο τρέχων λογαριασμός συμφέρει`:"ίδιο κόστος"}</td></tr></tbody>`;
+  $(".drawer .dh h3").textContent="Σύγκριση με τον τρέχοντα λογαριασμό";
+  $("#cmpTable").innerHTML=h;$("#overlay").classList.add("show");}
 
 function bindCmp(){$$('#results input[data-p]').forEach(cb=>cb.onchange=()=>{if(cb.checked){if(CMP.size>=3){cb.checked=false;return;}CMP.add(cb.dataset.p);}else CMP.delete(cb.dataset.p);bar();});}
 function bar(){const n=CMP.size;$("#cmpN").textContent=n;$("#cmpbar").classList.toggle('show',n>=1);$("#cmpGo").disabled=n<2;$("#cmpGo").style.opacity=n<2?.5:1;}
@@ -424,6 +436,9 @@ $("#cmpGo").onclick=()=>{if(CMP.size<2)return;buildCmp();$("#overlay").classList
 $("#cmpX").onclick=()=>$("#overlay").classList.remove('show');
 $("#overlay").onclick=e=>{if(e.target.id==='overlay')$("#overlay").classList.remove('show');};
 function buildCmp(){const sel=VIEW.filter(x=>CMP.has(x.d.prov+'|'+x.d.name));
+  const cm=clientM();
+  if(cm!=null)sel.unshift({d:{prov:st.cur||"Τρέχων",name:"Τρέχων λογαριασμός",rate:st.curRate,fixed:st.curFixed||0,duration:"—"},t:"",m:cm});
+  $(".drawer .dh h3").textContent="Σύγκριση προγραμμάτων";
   const rows=[["Τύπος",x=>TL[x.t][0]],["Τιμή €/kWh",x=>f3(x.d.rate)+'€',x=>x.d.rate,'low'],["Πάγιο/μήνα",x=>f2(x.d.fixed)+'€',x=>x.d.fixed||0,'low'],["Μηνιαίο κόστος",x=>fmt(x.m)+'€',x=>x.m,'low'],["Διάρκεια",x=>x.d.duration||'—']];
   let h='<thead><tr><th class="rl"></th>'+sel.map(x=>`<th><div class="tprov">${logo(x.d.prov)}<div><div style="font-weight:600">${x.d.prov}</div><div style="font-size:11.5px;color:var(--ink-3)">${x.d.name}</div></div></div></th>`).join('')+'</tr></thead><tbody>';
   rows.forEach(r=>{let bv=null;if(r[3]){const v=sel.map(r[2]);bv=Math.min(...v);}h+=`<tr><td class="rl">${r[0]}</td>`+sel.map(x=>{const w=r[3]&&Math.abs(r[2](x)-bv)<1e-9;return `<td class="${w?'win':''}">${r[1](x)}</td>`;}).join('')+'</tr>';});
