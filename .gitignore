@@ -8,6 +8,9 @@ scraper/.venv/
 scraper/_debug/
 scraper/dump/
 
+# Λογαριασμοί πελατών — ΠΡΟΣΩΠΙΚΑ ΔΕΔΟΜΕΝΑ, ποτέ στο public repo
+Bills/
+
 # OS / editor
 .DS_Store
 Thumbs.db
