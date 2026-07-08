@@ -475,6 +475,13 @@ $("#scrim").onclick=()=>{$("#side").classList.remove("open");$("#scrim").classLi
 function onCat(){st.types.clear();st.provs.clear();st.offers.clear();st.limit=24;st.kwh=DEF_KWH[catKey()];$("#kwh").value=st.kwh;CMP.clear();bar();clearClient();fillCur();buildSidebar();animateNext=true;skeleton();setTimeout(render,300);}
 
 $("#src").innerHTML=`Πηγή: ${T.source} · ${T.generated_at}`+(T.is_sample?` <span class="sample">SAMPLE</span>`:"");
+/* τελευταίος έλεγχος ΡΑΑΕΥ από το GitHub Action (τα δεδομένα αλλάζουν μόνο όταν αλλάξουν οι τιμές) */
+fetch("https://api.github.com/repos/georgeqwas/Energy-Calculator/actions/workflows/tariffs.yml/runs?status=completed&per_page=1")
+  .then(r=>r.json()).then(j=>{const run=j.workflow_runs&&j.workflow_runs[0];if(!run)return;
+    const dt=new Date(run.run_started_at),ok=run.conclusion==="success";
+    const s=dt.toLocaleString("el-GR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
+    $("#src").innerHTML+=`<br>έλεγχος για νέες τιμές: ${s} ${ok?"✓":'<span style="color:var(--brand)">⚠ απέτυχε</span>'}`;})
+  .catch(()=>{});
 $("#foot").innerHTML=(T.is_sample?"⚠ Δείγμα δεδομένων — τρέξε τον scraper για πραγματικά τιμολόγια.<br>":"")+`Δεδομένα: ${T.source} · ${T.generated_at} · Οι τιμές €/kWh & πάγιο είναι από ΡΑΑΕΥ· το μηνιαίο κόστος περιλαμβάνει εκτίμηση ρυθμιζόμενων χρεώσεων. · BizNest`;
 onCat();
 </script>
