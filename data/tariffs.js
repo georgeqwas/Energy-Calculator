@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-07-07 21:11",
+  "generated_at": "2026-07-11 06:39",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -2307,7 +2307,7 @@ window.TARIFFS = {
         "disc_cond": "Έκπτωση Συνέπειας: 0.035 €/kWh",
         "duration": "12",
         "notes": "Μετά την έκπτωση συνέπειας, δίνεται επιπλέον έκπτωση εξοικονόμησης, με την τελική τιμή (€/kWh) διαμορφώνεται σε: \n*0,084 (0-100 kWh)\n*0,104 (101-200 kWh)\n*0,124 (201-300 kWh)\n*0,144 (301-400 kWh)\n*0,164 (401-500 kWh)\n*0,174 (501+ kWh)",
-        "available": true
+        "available": false
       },
       {
         "prov": "NRG",
@@ -5434,6 +5434,22 @@ window.TARIFFS = {
         "available": true
       },
       {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες Extra",
+        "type": "float",
+        "fixed": 4.5,
+        "rate": 0.0515,
+        "rate_base": 0.0515,
+        "fixed_base": 4.5,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "24",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ΗΡΩΝ",
         "name": "GAS SHARE FLEX",
         "type": "float",
@@ -5640,6 +5656,38 @@ window.TARIFFS = {
         "duration": "24",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.0575,
+        "rate_base": 0.0575,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Κουζίνα",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.0575,
+        "rate_base": 0.0575,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "NRG",
@@ -6040,6 +6088,22 @@ window.TARIFFS = {
         "has_discount": true,
         "disc_cond": "ΕΠΙΠΛΕΟΝ 5% ΔΩΡΟ ΠΑΡΑΜΟΝΗΣ",
         "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Επαγγελματικό",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.0545,
+        "rate_base": 0.0545,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
         "notes": "",
         "available": true
       },
