@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07 06:02",
+  "generated_at": "2026-08-11 05:41",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1478,6 +1478,22 @@
         "available": true
       },
       {
+        "prov": "ΔΕΗ",
+        "name": "myHome Plan 06.26",
+        "type": "fixed",
+        "fixed": 7.35,
+        "rate": 0.1421,
+        "rate_base": 0.145,
+        "fixed_base": 7.5,
+        "fixed_disc": 7.35,
+        "rate_disc": 0.1421,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή· σύναψη τέτοιας σύμβασης, εγκατάσταση τηλεμετρούμενου ή επαύξηση ισχύος, συνεπάγεται μετάπτωση στο Βασικό Οικιακό Προϊόν (κυμαινόμενο).",
+        "available": true
+      },
+      {
         "prov": "VOLTON",
         "name": "VOLTON BLUE FIXED 6M_03",
         "type": "fixed",
@@ -2579,22 +2595,6 @@
         "disc_cond": "",
         "duration": "Αορίστου Διάρκειας",
         "notes": "Η τιμή Αυγούστου θα ανακοινωθεί τον Σεπτέμβριο.",
-        "available": true
-      },
-      {
-        "prov": "ΔΕΗ",
-        "name": "myHome4All OneRate",
-        "type": "float",
-        "fixed": 7.0,
-        "rate": 0.10864,
-        "rate_base": 0.10864,
-        "fixed_base": 7.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "Πάγια Εντολή",
-        "duration": "12",
-        "notes": "Η τιμή θα ανακοινωθεί τον Σεπτέμβριο 2026",
         "available": true
       }
     ],
@@ -5722,6 +5722,22 @@
         "available": false
       },
       {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες Extra",
+        "type": "float",
+        "fixed": 4.5,
+        "rate": 0.06279,
+        "rate_base": 0.06279,
+        "fixed_base": 4.5,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "24",
+        "notes": "Πολιτική Ορθής Χρήσης: έως 13 MWh ανά 12μηνο",
+        "available": true
+      },
+      {
         "prov": "ΔΕΗ",
         "name": "ΔΕΗ myBuildingGasBenefit",
         "type": "float",
@@ -5910,6 +5926,38 @@
         "has_discount": true,
         "disc_cond": "Οριζόντια Έκπτωση & Έκπτωση Συνδυαστικής Προσφοράς με Ηλεκτρική Ενέργεια.",
         "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.06879,
+        "rate_base": 0.06879,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Κουζίνα",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.06879,
+        "rate_base": 0.06879,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
         "notes": "",
         "available": true
       },
@@ -6424,6 +6472,22 @@
         "has_discount": true,
         "disc_cond": "Έκπτωση Συνέπειας & Έκπτωση Συνδυαστικής Προσφοράς με Ηλεκτρική Ενέργεια.",
         "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Επαγγελματικό",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.06579,
+        "rate_base": 0.06579,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
         "notes": "",
         "available": true
       },
