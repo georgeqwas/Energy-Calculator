@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-09-02 04:44",
+  "generated_at": "2026-09-03 05:33",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -4520,22 +4520,6 @@ window.TARIFFS = {
         "available": true
       },
       {
-        "prov": "ENERWAVE",
-        "name": "Ειδικό Γ23",
-        "type": "special",
-        "fixed": 5.0,
-        "rate": 0.294,
-        "rate_base": 0.294,
-        "fixed_base": 5.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "",
-        "available": true
-      },
-      {
         "prov": "SOLAR ENERGY",
         "name": "Επαγγελματικό FIXED",
         "type": "fixed",
@@ -4902,8 +4886,8 @@ window.TARIFFS = {
         "has_discount": true,
         "disc_cond": "Έκπτωση Double Energy 10%",
         "duration": "12",
-        "notes": "",
-        "available": true
+        "notes": "Από 01/09/2026 το προϊόν είναι μη εμπορικά διαθέσιμο.",
+        "available": false
       },
       {
         "prov": "ΕΛΙΝΟΙΛ",
