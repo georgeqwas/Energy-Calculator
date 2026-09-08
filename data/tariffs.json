@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06 04:42",
+  "generated_at": "2026-09-08 04:43",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1267,7 +1267,7 @@
         "disc_cond": "",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -4789,9 +4789,9 @@
         "rate_disc": null,
         "has_discount": false,
         "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
+        "duration": "12",
         "notes": "18ΜΗΝΗ ΙΣΧΥΣ ΣΥΜΒΑΣΗΣ",
-        "available": true
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -4823,7 +4823,7 @@
         "disc_cond": "Έκπτωση Power + Gas",
         "duration": "12",
         "notes": "Δωρεάν το πάγιο για τους μήνες Ιούνιο, Ιούλιο και Αύγουστο",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -5207,7 +5207,7 @@
         "disc_cond": "",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΕΛΙΝΟΙΛ",
@@ -5223,7 +5223,7 @@
         "disc_cond": "",
         "duration": "12",
         "notes": "Συνδυαστικό Πρόγραμμά",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
