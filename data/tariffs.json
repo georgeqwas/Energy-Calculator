@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11 04:43",
+  "generated_at": "2026-09-19 04:42",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -993,7 +993,7 @@
         "rate_disc": null,
         "has_discount": false,
         "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
+        "duration": "12",
         "notes": "Για τις πρώτες 90 ημέρες ισχύος του προγράμματος η Βασική Χρέωση Προμήθειας ισούται με την τελική χρέωση προμήθειας (0,119€/kWh). Από την 91η ημέρα ισχύος του προγράμματος και έως τη λήξη του προστίθεται Διακύμανση Κόστους Αγοράς (ΔΚΑ) βάσει των ειδικών όρων του προγράμματος. H τιμή Σεπτεμβρίου 2026 θα ανακοινωθεί τον Οκτώβριο 2026.",
         "available": false
       },
@@ -1012,22 +1012,6 @@
         "duration": "18",
         "notes": "",
         "available": false
-      },
-      {
-        "prov": "PROTERGIA",
-        "name": "Value Sure 18M 3.0",
-        "type": "fixed",
-        "fixed": 11.9,
-        "rate": 0.119,
-        "rate_base": 0.233,
-        "fixed_base": 11.9,
-        "fixed_disc": 11.9,
-        "rate_disc": 0.119,
-        "has_discount": true,
-        "disc_cond": "Εμπρόθεσμη Πληρωμή.",
-        "duration": "18",
-        "notes": "Τιμή προ έκπτωσης : 0,233 €/kWh για τους 3 πρώτους μήνες σύμβασης - 0,259 €/kWh για τους υπόλοιπους μήνες σύμβασης.\nΤιμή μετά έκπτωσης : 0,119 €/kWh  με συνέπεια για τους 3 πρώτους μήνες σύμβασης - 0,145 €/kWh με συνέπεια για τους υπόλοιπους μήνες σύμβασης. (Η έκπτωση αποδίδεται στους εκκαθαριστικούς του διαστήματος πρόσθετης έκπτωσης)",
-        "available": true
       },
       {
         "prov": "VOLTON",
@@ -1174,22 +1158,6 @@
         "available": false
       },
       {
-        "prov": "PROTERGIA",
-        "name": "Value Sure 12M 3.0",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.129,
-        "rate_base": 0.244,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.129,
-        "has_discount": true,
-        "disc_cond": "Εμπρόθεσμη Πληρωμή.",
-        "duration": "12",
-        "notes": "Τιμή προ έκπτωσης : 0,244 €/kWh για τους 3 πρώτους μήνες σύμβασης - 0,269 €/kWh για τους υπόλοιπους μήνες σύμβασης.\nΤιμή μετά έκπτωσης : 0,129 €/kWh  με συνέπεια για τους 3 πρώτους μήνες σύμβασης - 0,154 €/kWh με συνέπεια για τους υπόλοιπους μήνες σύμβασης. (Η έκπτωση αποδίδεται στους εκκαθαριστικούς του διαστήματος πρόσθετης έκπτωσης)",
-        "available": true
-      },
-      {
         "prov": "VOLTON",
         "name": "Volton Blue Student",
         "type": "fixed",
@@ -1252,22 +1220,6 @@
         "duration": "12",
         "notes": "Το προϊόν ήταν εμπορικά διαθέσιμο από τις 04/06/2025 έως και τις 19/03/2026.",
         "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed on time 1.0 18M promo",
-        "type": "fixed",
-        "fixed": 11.9,
-        "rate": 0.135,
-        "rate_base": 0.268,
-        "fixed_base": 11.9,
-        "fixed_disc": 11.9,
-        "rate_disc": 0.135,
-        "has_discount": true,
-        "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
-        "duration": "18",
-        "notes": "",
-        "available": true
       },
       {
         "prov": "ΔΕΗ",
@@ -1510,6 +1462,22 @@
         "available": true
       },
       {
+        "prov": "NRG",
+        "name": "nrg fixed on time 1.0 18M",
+        "type": "fixed",
+        "fixed": 11.9,
+        "rate": 0.144,
+        "rate_base": 0.268,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.144,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
+        "duration": "18",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "VOLTON",
         "name": "VOLTON BLUE FIXED 6M_03",
         "type": "fixed",
@@ -1588,6 +1556,22 @@
         "duration": "18",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Value Sure 18M 3.0",
+        "type": "fixed",
+        "fixed": 11.9,
+        "rate": 0.145,
+        "rate_base": 0.259,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.145,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή.",
+        "duration": "18",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ΔΕΗ",
@@ -1812,6 +1796,22 @@
         "duration": "12",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Value Sure 12M 3.0",
+        "type": "fixed",
+        "fixed": 9.9,
+        "rate": 0.154,
+        "rate_base": 0.269,
+        "fixed_base": 9.9,
+        "fixed_disc": 9.9,
+        "rate_disc": 0.154,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή.",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "VOLTON",
@@ -3320,22 +3320,6 @@
         "available": false
       },
       {
-        "prov": "PROTERGIA",
-        "name": "Επαγγελματικό 1 Value Sure 12Μ 3.0",
-        "type": "fixed",
-        "fixed": 13.9,
-        "rate": 0.1489,
-        "rate_base": 0.248,
-        "fixed_base": 13.9,
-        "fixed_disc": 13.9,
-        "rate_disc": 0.1489,
-        "has_discount": true,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "Τιμή προ έκπτωσης : 0,248 €/kWh για τους 3 πρώτους μήνες σύμβασης - 0,269 €/kWh για τους υπόλοιπους μήνες σύμβασης.\nΤιμή μετά έκπτωσης : 0,1489 €/kWh  με συνέπεια για τους 3 πρώτους μήνες σύμβασης - 0,1699 €/kWh με συνέπεια για τους υπόλοιπους μήνες σύμβασης. (Η έκπτωση αποδίδεται στους εκκαθαριστικούς του διαστήματος πρόσθετης έκπτωσης)",
-        "available": true
-      },
-      {
         "prov": "ENERWAVE",
         "name": "Reward Fee Free for Business Γ21",
         "type": "fixed",
@@ -3657,22 +3641,6 @@
       },
       {
         "prov": "NRG",
-        "name": "nrg fixed on time advanced 3.0 BUSINESS",
-        "type": "fixed",
-        "fixed": 13.9,
-        "rate": 0.165,
-        "rate_base": 0.278,
-        "fixed_base": 13.9,
-        "fixed_disc": 13.9,
-        "rate_disc": 0.165,
-        "has_discount": true,
-        "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
-        "duration": "12",
-        "notes": "",
-        "available": true
-      },
-      {
-        "prov": "NRG",
         "name": "nrg fixed on time 1.0 18M BUSINESS",
         "type": "fixed",
         "fixed": 13.9,
@@ -3736,6 +3704,22 @@
         "available": true
       },
       {
+        "prov": "NRG",
+        "name": "nrg fixed on time advanced 3.0 BUSINESS",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.168,
+        "rate_base": 0.278,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.168,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ΗΡΩΝ",
         "name": "Blue Generous BUSINESS 8",
         "type": "fixed",
@@ -3782,6 +3766,22 @@
         "duration": "12",
         "notes": "Το προϊόν ήταν εμπορικά διαθέσιμο από τις 07/04/2026 έως τις 02/07/2026. Υφίσταται έκπτωση συνέπειας 0,091€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Επαγγελματικό 1 Value Sure 12Μ 3.0",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.169,
+        "rate_base": 0.269,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.169,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή.",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "VOLTON",
@@ -5546,6 +5546,22 @@
         "available": true
       },
       {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες Extra",
+        "type": "float",
+        "fixed": 4.5,
+        "rate": 0.06911,
+        "rate_base": 0.06911,
+        "fixed_base": 4.5,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "24",
+        "notes": "Πολιτική Ορθής Χρήσης: έως 13 MWh ανά 12μηνο",
+        "available": true
+      },
+      {
         "prov": "EFA ENERGY",
         "name": "go GAS central",
         "type": "float",
@@ -5720,6 +5736,38 @@
         "duration": "24",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.07511,
+        "rate_base": 0.07511,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Κουζίνα",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.07511,
+        "rate_base": 0.07511,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "NRG",
@@ -6201,6 +6249,22 @@
         "disc_cond": "",
         "duration": "24",
         "notes": "Δώρο τα 3 πρώτα πάγια.",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Επαγγελματικό",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.07211,
+        "rate_base": 0.07211,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
         "available": true
       },
       {
