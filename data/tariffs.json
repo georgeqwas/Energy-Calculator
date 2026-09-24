@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19 04:42",
+  "generated_at": "2026-09-24 04:44",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -962,8 +962,8 @@
         "has_discount": true,
         "disc_cond": "Έκπτωση συνέπειας 0.141 €/kWh",
         "duration": "12",
-        "notes": "Το προϊόν είναι εμπορικά διαθέσιμο από τις 03/07/2026. Υφίσταται έκπτωση συνέπειας 0,141€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
-        "available": true
+        "notes": "Το προϊόν ήταν εμπορικά διαθέσιμο από τις 03/07/2026 έως τις 20/09/2026. Υφίσταται έκπτωση συνέπειας 0,141€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
+        "available": false
       },
       {
         "prov": "NRG",
@@ -3624,6 +3624,22 @@
         "available": false
       },
       {
+        "prov": "ΔΕΗ",
+        "name": "myBusinessEnter 06.26",
+        "type": "fixed",
+        "fixed": 8.82,
+        "rate": 0.1617,
+        "rate_base": 0.165,
+        "fixed_base": 9.0,
+        "fixed_disc": 8.82,
+        "rate_disc": 0.1617,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "EUNICE",
         "name": "Small Business Secure",
         "type": "fixed",
@@ -4886,7 +4902,7 @@
         "has_discount": false,
         "disc_cond": "",
         "duration": "12",
-        "notes": "Μηδενική εγγύηση\nγια νέους πελάτες έως 30.06.2026",
+        "notes": "Εμπορικά διαθέσιμο έως και 21.09.2026. Μηδενική εγγύηση\nγια νέους πελάτες έως 30.06.2026",
         "available": true
       },
       {
