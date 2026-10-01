@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29 04:46",
+  "generated_at": "2026-10-01 04:47",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -230,22 +230,6 @@
         "available": false
       },
       {
-        "prov": "ENERWAVE",
-        "name": "ELPEDISON Bright Night 6M",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.1099,
-        "rate_base": 0.1099,
-        "fixed_base": 9.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "6",
-        "notes": "Από 17/01/2025 το προϊόν είναι μη εμπορικά διαθέσιμο.",
-        "available": false
-      },
-      {
         "prov": "ΗΡΩΝ",
         "name": "BLUE GENEROUS HOME",
         "type": "fixed",
@@ -323,22 +307,6 @@
         "disc_cond": "Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": false
-      },
-      {
-        "prov": "ΖΕΝΙΘ",
-        "name": "Power Home Direct Plus",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.095,
-        "rate_base": 0.123,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.095,
-        "has_discount": true,
-        "disc_cond": "Έκπτωση συνέπειας",
-        "duration": "12",
-        "notes": "ΔΩΡΟ τα πρώτα 6 πάγια",
         "available": false
       },
       {
@@ -519,22 +487,6 @@
       },
       {
         "prov": "ΖΕΝΙΘ",
-        "name": "Power Home Secure",
-        "type": "fixed",
-        "fixed": 12.0,
-        "rate": 0.099,
-        "rate_base": 0.22,
-        "fixed_base": 12.0,
-        "fixed_disc": 12.0,
-        "rate_disc": 0.099,
-        "has_discount": true,
-        "disc_cond": "55% Έκπτωση Συνέπειας",
-        "duration": "12",
-        "notes": "",
-        "available": false
-      },
-      {
-        "prov": "ΖΕΝΙΘ",
         "name": "Power Home Secure Plus",
         "type": "fixed",
         "fixed": 9.9,
@@ -595,22 +547,6 @@
         "disc_cond": "Συνέπεια",
         "duration": "6",
         "notes": "Από 09/07 το προϊόν είναι μη εμπορικά διαθέσιμο",
-        "available": false
-      },
-      {
-        "prov": "ENERWAVE",
-        "name": "ELPEDISON Bright 6M",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.0999,
-        "rate_base": 0.0999,
-        "fixed_base": 9.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "6",
-        "notes": "Από 17/01/2025 το προϊόν είναι μη εμπορικά διαθέσιμο.",
         "available": false
       },
       {
@@ -1170,24 +1106,8 @@
         "has_discount": true,
         "disc_cond": "Έκπτωση συνέπειας 50.38%",
         "duration": "18",
-        "notes": "Η εταιρεία προσφέρει σε νέους πελάτες δωρεάν 3 πάγια τα οποία αφορούν τον 1ο, 3ο και 6ο μήνα εκπροσώπησης καθώς και μία δωροεπιταγή αξίας 50,00€ για τα καταστήματα Public. Επιπλέον, εάν ο πελάτης του συγκεκριμένου προγράμματος συστήσει τη Volton σε έναν ακόμα κάτοχο παροχής, μη υφιστάμενο πελάτη της Volton, για σύναψη σύμβασης προμήθειας σε ένα πρόγραμμα της Volton, εκτός του συγκεκριμένου, ο δεύτερος θα λαμβάνει συνολική έκπτωση 30,00€ στους λογαριασμούς του.",
+        "notes": "Φοιτητικό πρόγραμμα.",
         "available": true
-      },
-      {
-        "prov": "ΖΕΝΙΘ",
-        "name": "Power Home Direct",
-        "type": "fixed",
-        "fixed": 7.0,
-        "rate": 0.129,
-        "rate_base": 0.199,
-        "fixed_base": 7.0,
-        "fixed_disc": 7.0,
-        "rate_disc": 0.129,
-        "has_discount": true,
-        "disc_cond": "Συνέπεια",
-        "duration": "12",
-        "notes": "Μη εμπορικά διαθέσιμο από 22.11.2024",
-        "available": false
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -1415,22 +1335,6 @@
       },
       {
         "prov": "ΔΕΗ",
-        "name": "myHome Plan 06.26",
-        "type": "fixed",
-        "fixed": 7.35,
-        "rate": 0.1421,
-        "rate_base": 0.145,
-        "fixed_base": 7.5,
-        "fixed_disc": 7.35,
-        "rate_disc": 0.1421,
-        "has_discount": true,
-        "disc_cond": "Πάγια Εντολή",
-        "duration": "12",
-        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή· σύναψη τέτοιας σύμβασης, εγκατάσταση τηλεμετρούμενου ή επαύξηση ισχύος, συνεπάγεται μετάπτωση στο Βασικό Οικιακό Προϊόν (κυμαινόμενο).",
-        "available": true
-      },
-      {
-        "prov": "ΔΕΗ",
         "name": "myHome Enter 06.26",
         "type": "fixed",
         "fixed": 7.35,
@@ -1444,6 +1348,22 @@
         "duration": "12",
         "notes": "Η υπηρεσία Green Pass Home ενεργοποιείται με την ενεργοποίηση του προϊόντος και μετά το πέρας των 2 πρώτων μηνών άρχεται η χρέωσή της.",
         "available": false
+      },
+      {
+        "prov": "ΔΕΗ",
+        "name": "myHome Plan 06.26",
+        "type": "fixed",
+        "fixed": 7.35,
+        "rate": 0.1421,
+        "rate_base": 0.145,
+        "fixed_base": 7.5,
+        "fixed_disc": 7.35,
+        "rate_disc": 0.1421,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή· σύναψη τέτοιας σύμβασης, εγκατάσταση τηλεμετρούμενου ή επαύξηση ισχύος, συνεπάγεται μετάπτωση στο Βασικό Οικιακό Προϊόν (κυμαινόμενο).",
+        "available": true
       },
       {
         "prov": "ΔΕΗ",
@@ -1697,22 +1617,6 @@
         "rate_disc": null,
         "has_discount": false,
         "disc_cond": "",
-        "duration": "12",
-        "notes": "",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed 4U",
-        "type": "fixed",
-        "fixed": 3.5,
-        "rate": 0.15105,
-        "rate_base": 0.159,
-        "fixed_base": 5.0,
-        "fixed_disc": 3.5,
-        "rate_disc": 0.15105,
-        "has_discount": true,
-        "disc_cond": "nrg Total (συνδυασμός με αέριο)",
         "duration": "12",
         "notes": "",
         "available": false
@@ -1974,22 +1878,6 @@
         "available": false
       },
       {
-        "prov": "ΖΕΝΙΘ",
-        "name": "Power Home Fixed SE",
-        "type": "fixed",
-        "fixed": 5.0,
-        "rate": 0.16,
-        "rate_base": 0.189,
-        "fixed_base": 5.0,
-        "fixed_disc": 5.0,
-        "rate_disc": 0.16,
-        "has_discount": true,
-        "disc_cond": "Συνέπεια",
-        "duration": "12",
-        "notes": "Μη εμπορικά διαθέσιμο από 22.11.2024",
-        "available": false
-      },
-      {
         "prov": "ENERWAVE",
         "name": "ELPEDISON Bright",
         "type": "fixed",
@@ -2151,22 +2039,6 @@
       },
       {
         "prov": "ENERWAVE",
-        "name": "Reward Stable Zero 12M",
-        "type": "fixed",
-        "fixed": 0.0,
-        "rate": 0.189,
-        "rate_base": 0.26,
-        "fixed_base": 0.0,
-        "fixed_disc": 0.0,
-        "rate_disc": 0.189,
-        "has_discount": true,
-        "disc_cond": "Έκπτωση συνέπειας 0.071 €/kWh",
-        "duration": "12",
-        "notes": "Το προϊόν είναι εμπορικά διαθέσιμο από τις 07/04/2026. Υφίσταται έκπτωση συνέπειας 0,071€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
-        "available": true
-      },
-      {
-        "prov": "ENERWAVE",
         "name": "Reward Saver",
         "type": "float",
         "fixed": 7.9,
@@ -2182,20 +2054,20 @@
         "available": true
       },
       {
-        "prov": "NRG",
-        "name": "nrg fixed 4U 12 μήνες",
+        "prov": "ENERWAVE",
+        "name": "Reward Stable Zero 12M",
         "type": "fixed",
-        "fixed": 9.9,
+        "fixed": 0.0,
         "rate": 0.189,
-        "rate_base": 0.189,
-        "fixed_base": 9.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
+        "rate_base": 0.26,
+        "fixed_base": 0.0,
+        "fixed_disc": 0.0,
+        "rate_disc": 0.189,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση συνέπειας 0.071 €/kWh",
         "duration": "12",
-        "notes": "",
-        "available": false
+        "notes": "Το προϊόν είναι εμπορικά διαθέσιμο από τις 07/04/2026. Υφίσταται έκπτωση συνέπειας 0,071€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
+        "available": true
       },
       {
         "prov": "PROTERGIA",
@@ -2664,22 +2536,6 @@
         "available": false
       },
       {
-        "prov": "ΖΕΝΙΘ",
-        "name": "Power Business Trust",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.11499,
-        "rate_base": 0.22,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.11499,
-        "has_discount": true,
-        "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "Εμπορικά Διαθέσιμο από 15.05.2025 έως 25.06.2025",
-        "available": false
-      },
-      {
         "prov": "ΗΡΩΝ",
         "name": "BLUE GENEROUS BUSINESS 4",
         "type": "fixed",
@@ -2789,22 +2645,6 @@
         "disc_cond": "",
         "duration": "24",
         "notes": "",
-        "available": false
-      },
-      {
-        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
-        "name": "Ρεύµα ΜΑΧΙ Business 1 Fixed (6 μηνο προϊόν)",
-        "type": "fixed",
-        "fixed": 9.0,
-        "rate": 0.12,
-        "rate_base": 0.16,
-        "fixed_base": 9.0,
-        "fixed_disc": 9.0,
-        "rate_disc": 0.12,
-        "has_discount": true,
-        "disc_cond": "Συνέπεια",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "Από 01.09.24 το προϊόν είναι μή εμπορικά διαθέσιμο.",
         "available": false
       },
       {
@@ -3096,22 +2936,6 @@
         "available": false
       },
       {
-        "prov": "NRG",
-        "name": "nrg fixed 4U BUSINESS1 12Μ  (≤ 25 kVA)",
-        "type": "fixed",
-        "fixed": 14.9,
-        "rate": 0.1349,
-        "rate_base": 0.1349,
-        "fixed_base": 14.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "",
-        "available": false
-      },
-      {
         "prov": "PROTERGIA",
         "name": "Value Safe More Επαγγελματικό 1",
         "type": "fixed",
@@ -3288,22 +3112,6 @@
         "available": false
       },
       {
-        "prov": "ΖΕΝΙΘ",
-        "name": "Power Business Direct Plus",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.148,
-        "rate_base": 0.268,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.148,
-        "has_discount": true,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "Έκπτωση Συνέπειας 44,78%",
-        "available": true
-      },
-      {
         "prov": "VOLTON",
         "name": "Volton Blue Business 21_12M",
         "type": "fixed",
@@ -3445,22 +3253,6 @@
         "disc_cond": "",
         "duration": "12",
         "notes": "Από 05/06/2025 το προϊόν είναι μη εμπορικά διαθέσιμο.Απευθυνόταν αποκλειστικά σε επιχειρήσεις με τύπο παροχής Γ23.",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed 4U BUSINESS1 (≤ 25 kVA)",
-        "type": "fixed",
-        "fixed": 3.5,
-        "rate": 0.15105,
-        "rate_base": 0.159,
-        "fixed_base": 5.0,
-        "fixed_disc": 3.5,
-        "rate_disc": 0.15105,
-        "has_discount": true,
-        "disc_cond": "nrg Total (συνδυασμός με αέριο)",
-        "duration": "12",
-        "notes": "",
         "available": false
       },
       {
@@ -4037,22 +3829,6 @@
         "disc_cond": "",
         "duration": "12",
         "notes": "Από 05/06/2025 το προϊόν είναι μη εμπορικά διαθέσιμο.Απευθύνόταν αποκλειστικά σε επιχειρήσεις με τύπο παροχής Γ22.",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed 4U BUSINESS1 12μήνες (≤ 25 kVA)",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.199,
-        "rate_base": 0.199,
-        "fixed_base": 9.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "",
         "available": false
       },
       {
