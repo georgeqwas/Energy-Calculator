@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04 06:10",
+  "generated_at": "2026-10-06 04:46",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -2243,7 +2243,7 @@
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": false
+        "available": true
       },
       {
         "prov": "PROTERGIA",
@@ -4197,7 +4197,7 @@
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": false
+        "available": true
       },
       {
         "prov": "VOLTON",
@@ -4791,7 +4791,7 @@
         "disc_cond": "Έκπτωση Dual Energy (Παράλληλη σύνδεση Ηλεκτρικής Ενέργειας)",
         "duration": "12",
         "notes": "+ Δώρο 3 Πάγια (9,9 *3 = 29,7 σε ένα έτος)",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΔΕΗ",
