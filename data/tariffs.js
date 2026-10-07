@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-10-06 04:46",
+  "generated_at": "2026-10-07 04:47",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1491,7 +1491,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή.",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΔΕΗ",
@@ -1715,7 +1715,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή.",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1971,7 +1971,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -3557,7 +3557,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή.",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -3765,7 +3765,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -3781,7 +3781,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "OTE ESTATE",
@@ -4807,7 +4807,7 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "18",
         "notes": "Μηδενική εγγύηση για νέους πελάτες έως 30.11.2026",
-        "available": true
+        "available": false
       },
       {
         "prov": "ENERWAVE",
