@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08 04:48",
+  "generated_at": "2026-10-10 04:46",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1351,22 +1351,6 @@
       },
       {
         "prov": "ΔΕΗ",
-        "name": "myHome Plan 06.26",
-        "type": "fixed",
-        "fixed": 7.35,
-        "rate": 0.1421,
-        "rate_base": 0.145,
-        "fixed_base": 7.5,
-        "fixed_disc": 7.35,
-        "rate_disc": 0.1421,
-        "has_discount": true,
-        "disc_cond": "Πάγια Εντολή",
-        "duration": "12",
-        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή· σύναψη τέτοιας σύμβασης, εγκατάσταση τηλεμετρούμενου ή επαύξηση ισχύος, συνεπάγεται μετάπτωση στο Βασικό Οικιακό Προϊόν (κυμαινόμενο).",
-        "available": true
-      },
-      {
-        "prov": "ΔΕΗ",
         "name": "myHome Enter 07.26",
         "type": "fixed",
         "fixed": 7.35,
@@ -1379,6 +1363,22 @@
         "disc_cond": "Πάγια Εντολή",
         "duration": "12",
         "notes": "Δωρεάν η υπηρεσία Green Pass Home για τους 2 πρώτους μήνες μετά το πέρας των οποίων άρχεται η χρέωσή της. Η υπηρεσία ενεργοποιείται με την ενεργοποίηση του προϊόντος.",
+        "available": true
+      },
+      {
+        "prov": "ΔΕΗ",
+        "name": "myHome Plan 06.26",
+        "type": "fixed",
+        "fixed": 7.35,
+        "rate": 0.1421,
+        "rate_base": 0.145,
+        "fixed_base": 7.5,
+        "fixed_disc": 7.35,
+        "rate_disc": 0.1421,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή· σύναψη τέτοιας σύμβασης, εγκατάσταση τηλεμετρούμενου ή επαύξηση ισχύος, συνεπάγεται μετάπτωση στο Βασικό Οικιακό Προϊόν (κυμαινόμενο).",
         "available": true
       },
       {
@@ -4296,6 +4296,22 @@
         "available": true
       },
       {
+        "prov": "ENERWAVE",
+        "name": "Ειδικό Γ23",
+        "type": "special",
+        "fixed": 5.0,
+        "rate": 0.339,
+        "rate_base": 0.339,
+        "fixed_base": 5.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "SOLAR ENERGY",
         "name": "Επαγγελματικό FIXED",
         "type": "fixed",
@@ -4858,6 +4874,22 @@
         "available": false
       },
       {
+        "prov": "VOLTON",
+        "name": "Volton Gas Home",
+        "type": "float",
+        "fixed": 4.0,
+        "rate": 0.07008,
+        "rate_base": 0.0876,
+        "fixed_base": 4.0,
+        "fixed_disc": 4.0,
+        "rate_disc": 0.07008,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας 20% στην Τιμή Προμήθειας",
+        "duration": "24",
+        "notes": "",
+        "available": false
+      },
+      {
         "prov": "ΗΡΩΝ",
         "name": "GAS MAX HOME 2",
         "type": "float",
@@ -5066,6 +5098,22 @@
         "available": true
       },
       {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες Extra",
+        "type": "float",
+        "fixed": 4.5,
+        "rate": 0.08128,
+        "rate_base": 0.08128,
+        "fixed_base": 4.5,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "24",
+        "notes": "Πολιτική Ορθής Χρήσης: έως 13 MWh ανά 12μηνο",
+        "available": true
+      },
+      {
         "prov": "EFA ENERGY",
         "name": "GO GAS EXTRA HOME",
         "type": "float",
@@ -5160,6 +5208,38 @@
         "duration": "Αορίστου Διάρκειας",
         "notes": "",
         "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Gas Home Free",
+        "type": "float",
+        "fixed": 4.0,
+        "rate": 0.08322,
+        "rate_base": 0.0876,
+        "fixed_base": 4.0,
+        "fixed_disc": 4.0,
+        "rate_disc": 0.08322,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας 5% στην Τιμή Προμήθειας",
+        "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": false
+      },
+      {
+        "prov": "VOLTON",
+        "name": "KEN Gas Home Free",
+        "type": "float",
+        "fixed": 4.0,
+        "rate": 0.08322,
+        "rate_base": 0.0876,
+        "fixed_base": 4.0,
+        "fixed_disc": 4.0,
+        "rate_disc": 0.08322,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 5%",
+        "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": false
       },
       {
         "prov": "EFA ENERGY",
@@ -5288,6 +5368,38 @@
         "duration": "Αορίστου Διάρκειας",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Πλήρες",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.08728,
+        "rate_base": 0.08728,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Οικιακό Κουζίνα",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.08728,
+        "rate_base": 0.08728,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ENERWAVE",
@@ -5595,22 +5707,6 @@
       },
       {
         "prov": "VOLTON",
-        "name": "Volton Gas Home",
-        "type": "float",
-        "fixed": 4.0,
-        "rate": 0.07008,
-        "rate_base": 0.07008,
-        "fixed_base": 4.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "Έκπτωση Συνέπειας 20% στην Τιμή Προμήθειας",
-        "duration": "24",
-        "notes": "",
-        "available": false
-      },
-      {
-        "prov": "VOLTON",
         "name": "Volton Gas Home Dual",
         "type": "float",
         "fixed": 4.0,
@@ -5643,22 +5739,6 @@
       },
       {
         "prov": "VOLTON",
-        "name": "Volton Gas Home Free",
-        "type": "float",
-        "fixed": 4.0,
-        "rate": 0.08199,
-        "rate_base": 0.08199,
-        "fixed_base": 4.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "Έκπτωση Συνέπειας 5% στην Τιμή Προμήθειας",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "",
-        "available": false
-      },
-      {
-        "prov": "VOLTON",
         "name": "KEN Gas Home Dual",
         "type": "float",
         "fixed": 4.0,
@@ -5671,22 +5751,6 @@
         "disc_cond": "Συνέπεια",
         "duration": "24",
         "notes": "Έκπτωση Συνέπειας 30% στην Τιμή Προμήθειας σε συνδυασμό με πρόγραμμα ηλεκτρικής ενέργειας.",
-        "available": false
-      },
-      {
-        "prov": "VOLTON",
-        "name": "KEN Gas Home Free",
-        "type": "float",
-        "fixed": 4.0,
-        "rate": 0.08199,
-        "rate_base": 0.08199,
-        "fixed_base": 4.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "Συνέπεια 5%",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "",
         "available": false
       },
       {
@@ -5930,6 +5994,22 @@
         "duration": "24",
         "notes": "Εγγύηση 0€ με πάγια εντολή.",
         "available": false
+      },
+      {
+        "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
+        "name": "Αέριο Επαγγελματικό",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.08328,
+        "rate_base": 0.08328,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ENERWAVE",
