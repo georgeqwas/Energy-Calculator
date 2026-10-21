@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-10-20 04:44",
+  "generated_at": "2026-10-21 04:45",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1427,7 +1427,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΕΛΙΝΟΙΛ",
@@ -1524,6 +1524,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "Μη εμπορικά διαθέσιμο από 18/05/2026",
         "available": false
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue More HOME",
+        "type": "fixed",
+        "fixed": 12.9,
+        "rate": 0.145,
+        "rate_base": 0.286,
+        "fixed_base": 12.9,
+        "fixed_disc": 12.9,
+        "rate_disc": 0.145,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "24",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "VOLTON",
@@ -1683,7 +1699,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -1763,7 +1779,7 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ENERWAVE",
@@ -1795,7 +1811,7 @@ window.TARIFFS = {
         "disc_cond": "Έκπτωση Συνέπειας",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "NRG",
@@ -1862,6 +1878,54 @@ window.TARIFFS = {
         "available": false
       },
       {
+        "prov": "NRG",
+        "name": "nrg fixed on time 2.0 18M",
+        "type": "fixed",
+        "fixed": 9.9,
+        "rate": 0.166,
+        "rate_base": 0.287,
+        "fixed_base": 9.9,
+        "fixed_disc": 9.9,
+        "rate_disc": 0.166,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "18",
+        "notes": "Επιπλέον έκπτωση συνέπειας 0,037 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,129 €/kWh.",
+        "available": true
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Comfort Max HOME",
+        "type": "fixed",
+        "fixed": 9.9,
+        "rate": 0.166,
+        "rate_base": 0.287,
+        "fixed_base": 9.9,
+        "fixed_disc": 9.9,
+        "rate_disc": 0.166,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "18",
+        "notes": "",
+        "available": false
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Generous Max HOME 5",
+        "type": "fixed",
+        "fixed": 11.9,
+        "rate": 0.168,
+        "rate_base": 0.286,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.168,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "18",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ENERWAVE",
         "name": "ELPEDISON Bright",
         "type": "fixed",
@@ -1875,6 +1939,38 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "12",
         "notes": "Από 10/04/2024 το προϊόν είναι μη εμπορικά διαθέσιμο. Η διάρκεια σύμβασης συμφωνείται έως 31/12/2024.",
+        "available": false
+      },
+      {
+        "prov": "NRG",
+        "name": "nrg fixed on time 2.0 12M",
+        "type": "fixed",
+        "fixed": 10.9,
+        "rate": 0.169,
+        "rate_base": 0.287,
+        "fixed_base": 10.9,
+        "fixed_disc": 10.9,
+        "rate_disc": 0.169,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "Επιπλέον έκπτωση συνέπειας 0,040 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,129 €/kWh.",
+        "available": true
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Comfort HOME",
+        "type": "fixed",
+        "fixed": 10.9,
+        "rate": 0.169,
+        "rate_base": 0.287,
+        "fixed_base": 10.9,
+        "fixed_disc": 10.9,
+        "rate_disc": 0.169,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "12",
+        "notes": "",
         "available": false
       },
       {
@@ -1892,6 +1988,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "Μετά την έκπτωση συνέπειας, δίνεται επιπλέον έκπτωση εξοικονόμησης, με την τελική τιμή (€/kWh) διαμορφώνεται σε: \n*0,084 (0-100 kWh)\n*0,104 (101-200 kWh)\n*0,124 (201-300 kWh)\n*0,144 (301-400 kWh)\n*0,164 (401-500 kWh)\n*0,174 (501+ kWh)",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Value Sure 12M 4.0",
+        "type": "fixed",
+        "fixed": 11.9,
+        "rate": 0.177,
+        "rate_base": 0.247,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.177,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "Επιπλέον έκπτωση 0,050 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης.  Η έκπτωση αποδίδεται στους εκκαθαριστικούς λογαριασμούς της περιόδου. Μετά την έκπτωση και την προωθητική ενέργεια, η τελική τιμή χρέωσης για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,127 €/kWh.",
+        "available": true
       },
       {
         "prov": "NRG",
@@ -1926,6 +2038,22 @@ window.TARIFFS = {
         "available": true
       },
       {
+        "prov": "PROTERGIA",
+        "name": "Value Standard 2.0",
+        "type": "float",
+        "fixed": 5.0,
+        "rate": 0.184,
+        "rate_base": 0.224,
+        "fixed_base": 5.0,
+        "fixed_disc": 5.0,
+        "rate_disc": 0.184,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ENERWAVE",
         "name": "Reward Stable Zero 12M",
         "type": "fixed",
@@ -1940,6 +2068,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "Το προϊόν ήταν εμπορικά διαθέσιμο από τις 07/04/2026. έως τις 04/10/2026. Υφίσταται έκπτωση συνέπειας 0,071€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
         "available": false
+      },
+      {
+        "prov": "EUNICE",
+        "name": "Home Secure 2.0",
+        "type": "fixed",
+        "fixed": 6.0,
+        "rate": 0.19,
+        "rate_base": 0.19,
+        "fixed_base": 6.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ENERWAVE",
@@ -1972,6 +2116,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Simple More HOME",
+        "type": "fixed",
+        "fixed": 0.0,
+        "rate": 0.199,
+        "rate_base": 0.199,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "24",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "PROTERGIA",
@@ -2007,7 +2167,7 @@ window.TARIFFS = {
       },
       {
         "prov": "PROTERGIA",
-        "name": "Plus",
+        "name": "Value Plus",
         "type": "float",
         "fixed": 1.0,
         "rate": 0.20737,
@@ -2164,6 +2324,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "Υπάρχει δυνατότητα επιπλέον έκπτωσης συνέπειας ύψους 0,10014€/KWh υπό επιπλέον συμβατικές προυποθέσεις. Μη εμπορικά διαθέσιμο",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Value Bright 2.0",
+        "type": "float",
+        "fixed": 5.0,
+        "rate": 0.21914,
+        "rate_base": 0.23114,
+        "fixed_base": 5.0,
+        "fixed_disc": 5.0,
+        "rate_disc": 0.21914,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "Δυνατότητα επιπλέον έκπτωσης υπό διάφορες συμβατικές προϋποθέσεις : https://www.protergia.gr/spiti/oikiako-reuma-proionta/protergia-oikiako-value-bright-20/",
+        "available": true
       },
       {
         "prov": "PROTERGIA",
@@ -3413,7 +3589,7 @@ window.TARIFFS = {
         "disc_cond": "Έκπτωση Συνέπειας",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "NRG",
@@ -3477,7 +3653,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "NRG",
@@ -3509,7 +3685,7 @@ window.TARIFFS = {
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ENERWAVE",
@@ -3592,6 +3768,22 @@ window.TARIFFS = {
         "available": false
       },
       {
+        "prov": "EUNICE",
+        "name": "Small Business Secure 2.0",
+        "type": "fixed",
+        "fixed": 8.0,
+        "rate": 0.17,
+        "rate_base": 0.2,
+        "fixed_base": 8.0,
+        "fixed_disc": 8.0,
+        "rate_disc": 0.17,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "Αορίστου Διάρκειας",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
         "name": "MAXI Business 1 Secure",
         "type": "fixed",
@@ -3608,6 +3800,38 @@ window.TARIFFS = {
         "available": true
       },
       {
+        "prov": "NRG",
+        "name": "nrg fixed on time 2.0 BUSINESS 18M",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.176,
+        "rate_base": 0.289,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.176,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "18",
+        "notes": "Επιπλέον έκπτωση συνέπειας 0,040 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,136 €/kWh.",
+        "available": true
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Comfort Max BUSINESS",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.176,
+        "rate_base": 0.289,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.176,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "18",
+        "notes": "",
+        "available": false
+      },
+      {
         "prov": "ΗΡΩΝ",
         "name": "BASIC BUSINESS S",
         "type": "special",
@@ -3620,6 +3844,22 @@ window.TARIFFS = {
         "has_discount": true,
         "disc_cond": "Συνέπεια",
         "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Generous Max BUSINESS 5",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.179,
+        "rate_base": 0.288,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.179,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "18",
         "notes": "",
         "available": true
       },
@@ -3640,6 +3880,38 @@ window.TARIFFS = {
         "available": true
       },
       {
+        "prov": "NRG",
+        "name": "nrg fixed on time 2.0 BUSINESS 12M",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.185,
+        "rate_base": 0.289,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.185,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "Επιπλέον έκπτωση συνέπειας 0,049 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,136 €/kWh.",
+        "available": true
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "Blue Comfort BUSINESS",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.185,
+        "rate_base": 0.289,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.185,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια",
+        "duration": "12",
+        "notes": "",
+        "available": false
+      },
+      {
         "prov": "ENERWAVE",
         "name": "Reward Stable Zero for Business Γ21",
         "type": "fixed",
@@ -3654,6 +3926,38 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "Το προϊόν ήταν εμπορικά διαθέσιμο από τις 03/07/2026 έως τις 30/09/2026. Υφίσταται έκπτωση συνέπειας 0,071€/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Επαγγελματικό 3 Value Standard 2.0",
+        "type": "float",
+        "fixed": 5.0,
+        "rate": 0.194,
+        "rate_base": 0.24,
+        "fixed_base": 5.0,
+        "fixed_disc": 5.0,
+        "rate_disc": 0.194,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Επαγγελματικό 1 Value Standard 2.0",
+        "type": "float",
+        "fixed": 5.0,
+        "rate": 0.194,
+        "rate_base": 0.24,
+        "fixed_base": 5.0,
+        "fixed_disc": 5.0,
+        "rate_disc": 0.194,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ENERWAVE",
@@ -3749,6 +4053,22 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "12",
         "notes": "Σταθερό 12μηνο πρόγραμμα για μη-οικιακούς πελάτης έως 25 kVA",
+        "available": true
+      },
+      {
+        "prov": "EUNICE",
+        "name": "Small Business Secure Night 2.0",
+        "type": "fixed",
+        "fixed": 8.0,
+        "rate": 0.21,
+        "rate_base": 0.21,
+        "fixed_base": 8.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "Αορίστου Διάρκειας",
+        "notes": "",
         "available": true
       },
       {
@@ -4050,7 +4370,7 @@ window.TARIFFS = {
         "fixed_disc": 4.9,
         "rate_disc": 0.24398,
         "has_discount": true,
-        "disc_cond": "Πά",
+        "disc_cond": "Πάγια Εντολή",
         "duration": "12",
         "notes": "Εφαρμόζεται χρέωση ισχύος 1,5 €/kW/μήνα",
         "available": true
@@ -4792,6 +5112,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "+ Δώρο 3 Πάγια (9,9 *3 = 29,7 σε ένα έτος)",
         "available": false
+      },
+      {
+        "prov": "ΗΡΩΝ",
+        "name": "GAS BLUE PLUS HOME",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.0499,
+        "rate_base": 0.0499,
+        "fixed_base": 14.9,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "18",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ΔΕΗ",
