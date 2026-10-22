@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-10-21 04:45",
+  "generated_at": "2026-10-22 04:44",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -5526,8 +5526,8 @@ window.TARIFFS = {
         "has_discount": true,
         "disc_cond": "Έκπτωση Double Energy 10%",
         "duration": "24",
-        "notes": "",
-        "available": true
+        "notes": "Το προϊόν  τέθηκε μη εμπορικά διαθέσιμο στις 19/10/2026.",
+        "available": false
       },
       {
         "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
@@ -5702,8 +5702,8 @@ window.TARIFFS = {
         "has_discount": true,
         "disc_cond": "Έκπτωση Double Energy 10%",
         "duration": "24",
-        "notes": "",
-        "available": true
+        "notes": "Το προϊόν τέθηκε μη εμπορικά διαθέσιμο στις 19/10/2026.",
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -6440,8 +6440,8 @@ window.TARIFFS = {
         "has_discount": true,
         "disc_cond": "Έκπτωση Double Energy 10%",
         "duration": "24",
-        "notes": "",
-        "available": true
+        "notes": "Το προϊόν τέθηκε μη εμπορικά διαθέσιμο στις 19/10/2026.",
+        "available": false
       },
       {
         "prov": "PROTERGIA",
