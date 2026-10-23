@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-10-22 04:44",
+  "generated_at": "2026-10-23 04:45",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1171,7 +1171,7 @@ window.TARIFFS = {
         "disc_cond": "Έκπτωση Συνέπειας",
         "duration": "12",
         "notes": "+5€ έκπτωση για πελάτες Dual Energy (Παράλληλη Σύνδεση Φυσικού Αερίου)",
-        "available": true
+        "available": false
       },
       {
         "prov": "ENERWAVE",
@@ -1236,6 +1236,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Home Prime 2Y",
+        "type": "fixed",
+        "fixed": 15.9,
+        "rate": 0.139,
+        "rate_base": 0.299,
+        "fixed_base": 15.9,
+        "fixed_disc": 15.9,
+        "rate_disc": 0.139,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας",
+        "duration": "24",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
@@ -1395,7 +1411,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1683,7 +1699,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -1763,7 +1779,7 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -1812,6 +1828,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Home Fixed Safe 12M",
+        "type": "fixed",
+        "fixed": 15.9,
+        "rate": 0.159,
+        "rate_base": 0.299,
+        "fixed_base": 15.9,
+        "fixed_disc": 15.9,
+        "rate_disc": 0.159,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας",
+        "duration": "12",
+        "notes": "Χωρίς Τέλος Πρόωρης Λύσης της Σύμβασης",
+        "available": true
       },
       {
         "prov": "NRG",
@@ -1891,7 +1923,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή",
         "duration": "18",
         "notes": "Επιπλέον έκπτωση συνέπειας 0,037 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,129 €/kWh.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -1955,7 +1987,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή",
         "duration": "12",
         "notes": "Επιπλέον έκπτωση συνέπειας 0,040 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,129 €/kWh.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -3605,7 +3637,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -3669,7 +3701,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -3813,7 +3845,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή",
         "duration": "18",
         "notes": "Επιπλέον έκπτωση συνέπειας 0,040 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,136 €/kWh.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -3893,7 +3925,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή",
         "duration": "12",
         "notes": "Επιπλέον έκπτωση συνέπειας 0,049 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης. Η τελική τιμή χρέωσης με έκπτωση συνέπειας για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,136 €/kWh.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -4954,6 +4986,22 @@ window.TARIFFS = {
         "available": false
       },
       {
+        "prov": "ΔΕΗ",
+        "name": "ΔΕΗ myHomeGasControl",
+        "type": "fixed",
+        "fixed": 7.0,
+        "rate": 0.042,
+        "rate_base": 0.042,
+        "fixed_base": 7.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "Εμπορικά διαθέσιμο έως και 21.09.2026. Μηδενική εγγύηση\nγια νέους πελάτες έως 30.06.2026",
+        "available": true
+      },
+      {
         "prov": "ENERWAVE",
         "name": "GasHome Bright 6M",
         "type": "fixed",
@@ -5094,8 +5142,8 @@ window.TARIFFS = {
         "has_discount": false,
         "disc_cond": "",
         "duration": "12",
-        "notes": "Εμπορικά διαθέσιμοέως και 11.10.2026. Τιμολόγιο Κοινοχρήστων. 60€ έκπτωση στον λογαριασμό για αιτήσεις έως 11.10.2026",
-        "available": false
+        "notes": "60€ έκπτωση στον λογαριασμό για νέους πελάτες έως 30.6.2026",
+        "available": true
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -5128,22 +5176,6 @@ window.TARIFFS = {
         "duration": "18",
         "notes": "",
         "available": true
-      },
-      {
-        "prov": "ΔΕΗ",
-        "name": "ΔΕΗ myHomeGasControl",
-        "type": "fixed",
-        "fixed": 14.9,
-        "rate": 0.052,
-        "rate_base": 0.052,
-        "fixed_base": 14.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "18",
-        "notes": "Μηδενική εγγύηση για νέους πελάτες έως 30.11.2026",
-        "available": false
       },
       {
         "prov": "ENERWAVE",
