@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27 04:45",
+  "generated_at": "2026-10-28 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -5174,7 +5174,7 @@
         "has_discount": false,
         "disc_cond": "",
         "duration": "18",
-        "notes": "",
+        "notes": "Η εφαρμογή της Ρήτρας Πρόωρης Αποχώρησης αναστέλλεται έως την ενσωμάτωση της Οδηγίας (ΕΕ) 2024/1788 στην ελληνική έννομη τάξη.",
         "available": true
       },
       {
