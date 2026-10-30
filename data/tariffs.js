@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-10-28 04:38",
+  "generated_at": "2026-10-30 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1476,6 +1476,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "NRG",
+        "name": "nrg fixed on time 24M",
+        "type": "fixed",
+        "fixed": 12.9,
+        "rate": 0.145,
+        "rate_base": 0.286,
+        "fixed_base": 12.9,
+        "fixed_disc": 12.9,
+        "rate_disc": 0.145,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "24",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "PROTERGIA",
@@ -4998,8 +5014,8 @@ window.TARIFFS = {
         "has_discount": false,
         "disc_cond": "",
         "duration": "12",
-        "notes": "Εμπορικά διαθέσιμο έως και 21.09.2026. Μηδενική εγγύηση\nγια νέους πελάτες έως 30.06.2026",
-        "available": true
+        "notes": "",
+        "available": false
       },
       {
         "prov": "ENERWAVE",
@@ -5143,7 +5159,7 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "12",
         "notes": "60€ έκπτωση στον λογαριασμό για νέους πελάτες έως 30.6.2026",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -5160,6 +5176,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "+ Δώρο 3 Πάγια (9,9 *3 = 29,7 σε ένα έτος)",
         "available": false
+      },
+      {
+        "prov": "NRG",
+        "name": "nrg fixed GAS 1.0 18M",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.0499,
+        "rate_base": 0.0499,
+        "fixed_base": 14.9,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "18",
+        "notes": "Η εφαρμογή της Ρήτρας Πρόωρης Αποχώρησης αναστέλλεται έως την ενσωμάτωση της Οδηγίας (ΕΕ) 2024/1788 στην ελληνική έννομη τάξη.",
+        "available": true
       },
       {
         "prov": "ΗΡΩΝ",
