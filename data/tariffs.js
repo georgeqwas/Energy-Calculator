@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-10-30 04:38",
+  "generated_at": "2026-10-31 04:37",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1094,6 +1094,22 @@ window.TARIFFS = {
         "available": false
       },
       {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Home Flex",
+        "type": "float",
+        "fixed": 11.9,
+        "rate": 0.127,
+        "rate_base": 0.285,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.127,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας",
+        "duration": "12",
+        "notes": "Η τιμολόγηση  παραμένει σταθερή για τους μήνες Οκτώβριος, Νοέμβριος και Δεκέμβριος 2026. Από Ιανουάριο 2027, η τιμολόγηση είναι κυμαινόμενη βάσει της μεθοδολογίας που περιγράφεται στους ειδικούς όρους της σύμβασης.",
+        "available": true
+      },
+      {
         "prov": "VOLTON",
         "name": "Volton Blue Student",
         "type": "fixed",
@@ -2051,6 +2067,22 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή",
         "duration": "12",
         "notes": "Επιπλέον έκπτωση 0,050 €/kWh για τις πρώτες 90 ημέρες σύμβασης από την ημέρα εκπροσώπησης.  Η έκπτωση αποδίδεται στους εκκαθαριστικούς λογαριασμούς της περιόδου. Μετά την έκπτωση και την προωθητική ενέργεια, η τελική τιμή χρέωσης για τους πρώτους 3 μήνες σύμβασης διαμορφώνεται στα 0,127 €/kWh.",
+        "available": true
+      },
+      {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Home Fixed Protect 2.0",
+        "type": "fixed",
+        "fixed": 12.9,
+        "rate": 0.177,
+        "rate_base": 0.299,
+        "fixed_base": 12.9,
+        "fixed_disc": 12.9,
+        "rate_disc": 0.177,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας",
+        "duration": "12",
+        "notes": "Η τιμή μετά την έκπτωση συνέπειας είναι 0,127 €/kWh για τις πρώτες 120 ημέρες.\n\nΡήτρα Πρόωρης Αποχώρησης, από 236 € στον 1ο μήνα, έως και 51 € στον 11ο.",
         "available": true
       },
       {
