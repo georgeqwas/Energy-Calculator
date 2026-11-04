@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-11-03 04:38",
+  "generated_at": "2026-11-04 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -851,7 +851,7 @@ window.TARIFFS = {
         "disc_cond": "",
         "duration": "12",
         "notes": "Προωθητική έκπτωση 0,027€/kWh (Ζώνη Κανονικής Χρέωσης) και 0,017€/kWh (Ζώνη Μειωμένης Χρέωσης) για συμβάσεις που ενεργοποιούνται έως 31.10.2026. Δωρεάν υπηρεσία Green Pass για 2 μήνες έως 31.10.2026. Μετά το πέρας των 2 μηνών η χρέωση είναι 0,95€/μήνα. Εξόφληση λογαριασμών μόνο με πάγια εντολή.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -2209,7 +2209,7 @@ window.TARIFFS = {
         "rate_disc": 0.25954,
         "has_discount": true,
         "disc_cond": "Συνέπεια",
-        "duration": "6",
+        "duration": "Αορίστου Διάρκειας",
         "notes": "",
         "available": true
       },
@@ -4025,7 +4025,7 @@ window.TARIFFS = {
       },
       {
         "prov": "PROTERGIA",
-        "name": "Επαγγελματικό 2 & 3 Value Sure 12Μ 2.0",
+        "name": "Επαγγελματικό 3 Value Sure 12Μ 2.0",
         "type": "fixed",
         "fixed": 0.0,
         "rate": 0.1999,
@@ -4115,7 +4115,7 @@ window.TARIFFS = {
         "rate_disc": 0.27374,
         "has_discount": true,
         "disc_cond": "Συνέπεια",
-        "duration": "12",
+        "duration": "Αορίστου Διάρκειας",
         "notes": "",
         "available": true
       },
@@ -4163,7 +4163,7 @@ window.TARIFFS = {
         "rate_disc": 0.27434,
         "has_discount": true,
         "disc_cond": "Συνέπεια",
-        "duration": "6",
+        "duration": "Αορίστου Διάρκειας",
         "notes": "",
         "available": true
       },
@@ -4204,11 +4204,11 @@ window.TARIFFS = {
         "name": "Protergia Επαγγελματικό 3 Value Special",
         "type": "special",
         "fixed": 5.0,
-        "rate": 0.2842,
-        "rate_base": 0.3382,
+        "rate": 0.28419,
+        "rate_base": 0.33819,
         "fixed_base": 5.0,
         "fixed_disc": 5.0,
-        "rate_disc": 0.2842,
+        "rate_disc": 0.28419,
         "has_discount": true,
         "disc_cond": "Συνέπεια",
         "duration": "Αορίστου Διάρκειας",
@@ -5533,11 +5533,11 @@ window.TARIFFS = {
         "prov": "PROTERGIA",
         "name": "Οικιακό Αυτόνομο/Κοινόχρηστο Value Gas Flex",
         "type": "float",
-        "fixed": 5.0,
+        "fixed": 7.0,
         "rate": 0.09031,
         "rate_base": 0.09231,
         "fixed_base": 7.0,
-        "fixed_disc": 5.0,
+        "fixed_disc": 7.0,
         "rate_disc": 0.09031,
         "has_discount": true,
         "disc_cond": "Έκπτωση Power&Gas 0.002 €/KWh",
