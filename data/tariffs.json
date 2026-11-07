@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04 04:38",
+  "generated_at": "2026-11-07 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -2070,6 +2070,22 @@
         "available": true
       },
       {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Home Fixed Plus",
+        "type": "fixed",
+        "fixed": 14.5,
+        "rate": 0.179,
+        "rate_base": 0.299,
+        "fixed_base": 14.5,
+        "fixed_disc": 14.5,
+        "rate_disc": 0.179,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση συνέπειας 0.120 €/kWh",
+        "duration": "12",
+        "notes": "Για τις πρώτες 120 ημέρες της σύμβασης (4 μήνες), η έκπτωση συνέπειας διαμορφώνεται σε 0.180 €/kWh και η τιμή μετά την εφαρμογή της σε 0,119 €/kWh",
+        "available": true
+      },
+      {
         "prov": "NRG",
         "name": "nrg 100",
         "type": "float",
@@ -2387,7 +2403,7 @@
         "disc_cond": "Συνέπεια",
         "duration": "12",
         "notes": "Δυνατότητα επιπλέον έκπτωσης ύψους 129.39 €/ΜWh υπό προϋποθέσεις : https://www.protergia.gr/spiti/oikiako-reuma-proionta/protergia-oikiako-value-bright-20/",
-        "available": true
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -3464,6 +3480,22 @@
         "available": false
       },
       {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Business Prime Fixed 2Y >25 KVA",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.155,
+        "rate_base": 0.25,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.155,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας (0.095 €/kWh)",
+        "duration": "24",
+        "notes": "Εγγύηση: 350 €\n\nΡήτρα Πρόωρης Αποχώρησης μεταξύ 370 € (1ος μήνας) - 252€ (23ος Μήνας)",
+        "available": true
+      },
+      {
         "prov": "EUNICE",
         "name": "BUSINESS SAFETY",
         "type": "fixed",
@@ -3816,6 +3848,22 @@
         "available": true
       },
       {
+        "prov": "ΖΕΝΙΘ",
+        "name": "Power Business Prime Fixed 1Y >25 KVA",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.169,
+        "rate_base": 0.299,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.169,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση Συνέπειας (0.130 €/kWh)",
+        "duration": "12",
+        "notes": "Εγγύηση: 350 €\n\nΡήτρα Πρόωρης Αποχώρησης μεταξύ 370 € (1ος μήνας) - 162 € (11ος μήνας)",
+        "available": true
+      },
+      {
         "prov": "PROTERGIA",
         "name": "Επαγγελματικό 1 Value Sure 12Μ 2.0",
         "type": "fixed",
@@ -3860,8 +3908,8 @@
         "has_discount": true,
         "disc_cond": "Έκπτωση Συνέπειας. 30€/MWh",
         "duration": "12",
-        "notes": "",
-        "available": true
+        "notes": "ΜΗ ΕΜΠΟΡΙΚΑ ΔΙΑΘΕΣΙΜΟ ΑΠΟ 6/11/2026.",
+        "available": false
       },
       {
         "prov": "NRG",
@@ -4020,8 +4068,8 @@
         "has_discount": true,
         "disc_cond": "Έκπτωση Συνέπειας 50€/MWh",
         "duration": "12",
-        "notes": "",
-        "available": true
+        "notes": "ΜΗ ΕΜΠΟΡΙΚΑ ΔΙΑΘΕΣΙΜΟ ΑΠΟ 6/11/2026.",
+        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -5223,7 +5271,7 @@
         "disc_cond": "",
         "duration": "18",
         "notes": "Η εφαρμογή της Ρήτρας Πρόωρης Αποχώρησης αναστέλλεται έως την ενσωμάτωση της Οδηγίας (ΕΕ) 2024/1788 στην ελληνική έννομη τάξη.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΗΡΩΝ",
@@ -5239,7 +5287,7 @@
         "disc_cond": "",
         "duration": "18",
         "notes": "Η εφαρμογή της Ρήτρας Πρόωρης Αποχώρησης αναστέλλεται έως την ενσωμάτωση της Οδηγίας (ΕΕ) 2024/1788 στην ελληνική έννομη τάξη.",
-        "available": true
+        "available": false
       },
       {
         "prov": "ENERWAVE",
