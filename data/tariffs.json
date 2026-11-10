@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07 04:38",
+  "generated_at": "2026-11-10 04:40",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -2100,6 +2100,22 @@
         "duration": "12",
         "notes": "Τιμολόγιο που χρεώνει τιμή κλίμακας 15€ επιπλέον για κάθε 100 κWh κατανάλωσης μέχρι τις 500 kWh. (Ενδεικτική Tιμή (€/kWh) για κατανάλωση ίση με 330 kWh / μήνα (βάσει των μέσων καταναλώσεων οικιακών πελατών.",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Value Sure 12M 5.0",
+        "type": "fixed",
+        "fixed": 16.9,
+        "rate": 0.187,
+        "rate_base": 0.287,
+        "fixed_base": 16.9,
+        "fixed_disc": 16.9,
+        "rate_disc": 0.187,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "12",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ENERWAVE",
