@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11 04:38",
+  "generated_at": "2026-11-12 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -79,6 +79,11 @@
     },
     "EFA ENERGY": {
       "slug": "efa-energy",
+      "color": "#5b5b64",
+      "domain": ""
+    },
+    "TELEKOM ESTATE": {
+      "slug": "telekom-estate",
       "color": "#5b5b64",
       "domain": ""
     }
@@ -1143,6 +1148,54 @@
       },
       {
         "prov": "ΔΕΗ",
+        "name": "My Home Online 11.26",
+        "type": "fixed",
+        "fixed": 5.0,
+        "rate": 0.13,
+        "rate_base": 0.175,
+        "fixed_base": 5.0,
+        "fixed_disc": 5.0,
+        "rate_disc": 0.13,
+        "has_discount": true,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "Προωθητική έκπτωση 0,045€/kWh (Ζώνη Κανονικής Χρέωσης) και 0,035€/kWh (Ζώνη Μειωμένης Χρέωσης) για συμβάσεις που ενεργοποιούνται από 01.11.2026 έως 30.11.2026. Δωρεάν υπηρεσία Green Pass για 2 μήνες έως 31.11.2026. Μετά το πέρας των 2 μηνών η χρέωση είναι 0,95€/μήνα συν ΦΠΑ 6%. Εξόφληση λογαριασμών μόνο με πάγια εντολή.",
+        "available": true
+      },
+      {
+        "prov": "ΔΕΗ",
+        "name": "myHomeEnterTwo 10.26",
+        "type": "fixed",
+        "fixed": 8.82,
+        "rate": 0.1519,
+        "rate_base": 0.155,
+        "fixed_base": 9.0,
+        "fixed_disc": 8.82,
+        "rate_disc": 0.1519,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "24",
+        "notes": "Εμπορικά διαθέσιμο έως και 08.11.2026. Δωρεάν υπηρεσία Green Pass για 2 μήνες. Μετά το πέρας των 2 μηνών η χρέωση είναι 0,95€/μήνα συν ΦΠΑ 6%.",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 18M v3",
+        "type": "fixed",
+        "fixed": 11.9,
+        "rate": 0.135,
+        "rate_base": 0.26,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.135,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 48.08%",
+        "duration": "18",
+        "notes": "",
+        "available": false
+      },
+      {
+        "prov": "ΔΕΗ",
         "name": "My Home Online 06.26",
         "type": "fixed",
         "fixed": 3.5,
@@ -1303,6 +1356,22 @@
       },
       {
         "prov": "VOLTON",
+        "name": "Volton Blue Flat 24M",
+        "type": "fixed",
+        "fixed": 9.9,
+        "rate": 0.14,
+        "rate_base": 0.28,
+        "fixed_base": 9.9,
+        "fixed_disc": 9.9,
+        "rate_disc": 0.14,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 50%",
+        "duration": "24",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
         "name": "Volton Yellow Protect Oct\\'26",
         "type": "float",
         "fixed": 10.9,
@@ -1394,7 +1463,7 @@
         "has_discount": true,
         "disc_cond": "Πάγια Εντολή",
         "duration": "12",
-        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή· σύναψη τέτοιας σύμβασης, εγκατάσταση τηλεμετρούμενου ή επαύξηση ισχύος, συνεπάγεται μετάπτωση στο Βασικό Οικιακό Προϊόν (κυμαινόμενο).",
+        "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή.",
         "available": true
       },
       {
@@ -1939,6 +2008,38 @@
         "disc_cond": "Συνέπεια 35.71%",
         "duration": "12",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,130€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 12M",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.165,
+        "rate_base": 0.28,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.165,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 41.07%",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Fixed Plus 18M v2",
+        "type": "fixed",
+        "fixed": 12.9,
+        "rate": 0.165,
+        "rate_base": 0.28,
+        "fixed_base": 12.9,
+        "fixed_disc": 12.9,
+        "rate_disc": 0.165,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 41.07%",
+        "duration": "18",
+        "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρεται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,130€/kWh. Ισχύει για νέους πελάτες.",
         "available": true
       },
       {
@@ -2582,7 +2683,7 @@
         "available": true
       },
       {
-        "prov": "OTE ESTATE",
+        "prov": "TELEKOM ESTATE",
         "name": "Ειδικό",
         "type": "special",
         "fixed": 5.0,
@@ -3544,6 +3645,22 @@
         "available": false
       },
       {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 18M v3",
+        "type": "fixed",
+        "fixed": 11.9,
+        "rate": 0.155,
+        "rate_base": 0.26,
+        "fixed_base": 11.9,
+        "fixed_disc": 11.9,
+        "rate_disc": 0.155,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 40.38%",
+        "duration": "18",
+        "notes": "",
+        "available": false
+      },
+      {
         "prov": "ΖΕΝΙΘ",
         "name": "Power Business Prime Fixed 2Y >25 KVA",
         "type": "fixed",
@@ -3672,22 +3789,6 @@
         "available": false
       },
       {
-        "prov": "VOLTON",
-        "name": "Volton Blue Flat 18M Business 21 v2",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.15902,
-        "rate_base": 0.26,
-        "fixed_base": 18.0,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.15902,
-        "has_discount": true,
-        "disc_cond": "Έκπτωση συνέπειας 38.84%",
-        "duration": "18",
-        "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται δωρεάν πάγια. Ισχύει για νέους πελάτες.",
-        "available": true
-      },
-      {
         "prov": "ΕΛΙΝΟΙΛ",
         "name": "Power On! Blue 12M Επαγγελματικό 2",
         "type": "fixed",
@@ -3718,6 +3819,22 @@
         "duration": "12",
         "notes": "",
         "available": false
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat Business 21 24M",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.16,
+        "rate_base": 0.28,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.16,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 42.86%",
+        "duration": "24",
+        "notes": "",
+        "available": true
       },
       {
         "prov": "ΔΕΗ",
@@ -3816,6 +3933,22 @@
         "available": false
       },
       {
+        "prov": "ΔΕΗ",
+        "name": "MyBusiness Horeca 09.26",
+        "type": "fixed",
+        "fixed": 15.58,
+        "rate": 0.16562,
+        "rate_base": 0.169,
+        "fixed_base": 15.9,
+        "fixed_disc": 15.58,
+        "rate_disc": 0.16562,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "Για εγκαταστάσεις τάσης ≤25kVA. Εποχική έκπτωση 0,020€/kWh για τις καταναλώσεις τους μήνες από Απρίλιο έως και Σεπτέμβριο (τελική βασική τιμή 0,1490€/kWh για τους μήνες αυτούς).",
+        "available": true
+      },
+      {
         "prov": "NRG",
         "name": "nrg fixed on time advanced 3.0 BUSINESS",
         "type": "fixed",
@@ -3896,22 +4029,6 @@
         "available": false
       },
       {
-        "prov": "VOLTON",
-        "name": "Volton Blue Flat Business 21 v2",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.169,
-        "rate_base": 0.26,
-        "fixed_base": 18.0,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.169,
-        "has_discount": true,
-        "disc_cond": "Έκπτωση συνέπειας 35%",
-        "duration": "12",
-        "notes": "Σε νέους πελάτες, προσφέρεται προωθητική ενέργεια όπου για τους πρώτους τρεις (3) μήνες εκπροσώπησης τα πάγια είναι μηδενικά.",
-        "available": true
-      },
-      {
         "prov": "ΖΕΝΙΘ",
         "name": "Power Business Prime Fixed 1Y >25 KVA",
         "type": "fixed",
@@ -3957,6 +4074,22 @@
         "disc_cond": "Συνέπεια",
         "duration": "Αορίστου Διάρκειας",
         "notes": "",
+        "available": true
+      },
+      {
+        "prov": "ΔΕΗ",
+        "name": "MyBusinessEnter 10.26",
+        "type": "fixed",
+        "fixed": 8.82,
+        "rate": 0.1715,
+        "rate_base": 0.175,
+        "fixed_base": 9.0,
+        "fixed_disc": 8.82,
+        "rate_disc": 0.1715,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "Εμπορικά διαθέσιμο έως και 08.11.2026. Για παροχές με εγκατεστημένη ισχύ έως 35 kVA",
         "available": true
       },
       {
@@ -4021,6 +4154,38 @@
         "disc_cond": "Συνέπεια",
         "duration": "18",
         "notes": "",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat Business 21 12M",
+        "type": "fixed",
+        "fixed": 15.9,
+        "rate": 0.18,
+        "rate_base": 0.28,
+        "fixed_base": 15.9,
+        "fixed_disc": 15.9,
+        "rate_disc": 0.18,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 35.71%",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Fixed Plus 18M v2",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.18,
+        "rate_base": 0.28,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.18,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 35.71%",
+        "duration": "18",
+        "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρεται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,150€/kWh. Ισχύει για νέους πελάτες.",
         "available": true
       },
       {
@@ -4230,6 +4395,38 @@
         "duration": "Αορίστου Διάρκειας",
         "notes": "",
         "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 18M Business 21 v2",
+        "type": "fixed",
+        "fixed": -27.0,
+        "rate": 0.22116,
+        "rate_base": 0.26,
+        "fixed_base": 18.0,
+        "fixed_disc": -27.0,
+        "rate_disc": 0.22116,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση συνέπειας 38.84%",
+        "duration": "18",
+        "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται δωρεάν πάγια. Ισχύει για νέους πελάτες.",
+        "available": false
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat Business 21 v2",
+        "type": "fixed",
+        "fixed": -27.0,
+        "rate": 0.225,
+        "rate_base": 0.26,
+        "fixed_base": 18.0,
+        "fixed_disc": -27.0,
+        "rate_disc": 0.225,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση συνέπειας 35%",
+        "duration": "12",
+        "notes": "Σε νέους πελάτες, προσφέρεται προωθητική ενέργεια όπου για τους πρώτους τρεις (3) μήνες εκπροσώπησης τα πάγια είναι μηδενικά.",
+        "available": false
       },
       {
         "prov": "ENERWAVE",
@@ -4568,7 +4765,7 @@
         "available": true
       },
       {
-        "prov": "OTE ESTATE",
+        "prov": "TELEKOM ESTATE",
         "name": "Ειδικό",
         "type": "special",
         "fixed": 5.0,
