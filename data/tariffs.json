@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13 04:38",
+  "generated_at": "2026-11-14 04:37",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -443,22 +443,6 @@
         "available": false
       },
       {
-        "prov": "NRG",
-        "name": "nrg fixed on time advanced promo",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.099,
-        "rate_base": 0.199,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.099,
-        "has_discount": true,
-        "disc_cond": "Πληρωμή με Συνέπεια (Η έκπτωση συνέπειας αποδίδεται από τον 2ο λογαριασμό και έπειτα).",
-        "duration": "12",
-        "notes": "Η τελική τιμή μετά την έκπτωση συνέπειας είναι 0,088€/kWh για τις πρώτες 90 ημέρες της σύμβασης. Για τις υπόλοιπες μέρες της σύμβασης Η τελική τιμή μετά την έκπτωση συνέπειας θα είναι 0,099€/kWh",
-        "available": false
-      },
-      {
         "prov": "PROTERGIA",
         "name": "Value Secure 12 Μήνες",
         "type": "fixed",
@@ -584,22 +568,6 @@
         "disc_cond": "Πληρωμή με Συνέπεια",
         "duration": "12",
         "notes": "Εμπορικά διαθέσιμο από 12.06.2025 έως 08.08.2025",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed on time",
-        "type": "fixed",
-        "fixed": 9.9,
-        "rate": 0.1078,
-        "rate_base": 0.154,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
-        "rate_disc": 0.1078,
-        "has_discount": true,
-        "disc_cond": "Έκπτωση Συνέπειας 30%",
-        "duration": "12",
-        "notes": "",
         "available": false
       },
       {
@@ -792,22 +760,6 @@
         "disc_cond": "Πληρωμή με Συνέπεια",
         "duration": "12",
         "notes": "Το πρόγραμμα είναι διζωνικό. Η μειωμένη νυχτερινή τιμή εφαρμόζεται και τη νύχτα και το μεσημέρι κατά τα συγκεκριμένα ωράρια : Α. Από 1 Νοεμβρίου έως 31 Μαρτίου, μεταξύ 02:00-05:00 και 12:00-15:00\nΒ. Από 1 Απριλίου έως 31 Οκτωβρίου, μεταξύ 02:00-04:00 και 11:00-15:00.",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed 4U 12M",
-        "type": "fixed",
-        "fixed": 14.9,
-        "rate": 0.115,
-        "rate_base": 0.115,
-        "fixed_base": 14.9,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "",
         "available": false
       },
       {
@@ -1656,7 +1608,7 @@
         "disc_cond": "Συνέπεια",
         "duration": "24",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1915,22 +1867,6 @@
         "available": true
       },
       {
-        "prov": "NRG",
-        "name": "nrg 50",
-        "type": "float",
-        "fixed": 5.0,
-        "rate": 0.15909,
-        "rate_base": 0.15909,
-        "fixed_base": 5.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "Τιμολόγιο που χρεώνει τιμή κλίμακας 7.5€ επιπλέον για κάθε 50 kWh κατανάλωσης μέχρι τις 500 kWh. (Ενδεικτική Tιμή (€/kWh) για κατανάλωση ίση με 330 kWh / μήνα (βάσει των μέσων καταναλώσεων οικιακών πελατών)",
-        "available": false
-      },
-      {
         "prov": "VOLTON",
         "name": "VOLTON BLUE FIXED 6M_04",
         "type": "fixed",
@@ -2104,7 +2040,7 @@
         "disc_cond": "Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ENERWAVE",
@@ -2296,7 +2232,7 @@
         "disc_cond": "",
         "duration": "24",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -2761,54 +2697,6 @@
         "duration": "12",
         "notes": "",
         "available": true
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg simple",
-        "type": "float",
-        "fixed": 3.5,
-        "rate": 0.36098,
-        "rate_base": 0.36098,
-        "fixed_base": 5.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg simple 1.0",
-        "type": "float",
-        "fixed": 3.5,
-        "rate": 0.36098,
-        "rate_base": 0.36098,
-        "fixed_base": 5.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "",
-        "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg simple 2.0",
-        "type": "float",
-        "fixed": 3.5,
-        "rate": 0.36098,
-        "rate_base": 0.36098,
-        "fixed_base": 5.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
-        "notes": "",
-        "available": false
       },
       {
         "prov": "NRG",
@@ -4170,7 +4058,7 @@
         "disc_cond": "Συνέπεια",
         "duration": "18",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
