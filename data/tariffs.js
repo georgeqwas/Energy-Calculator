@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-11-14 04:37",
+  "generated_at": "2026-11-17 04:37",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1497,22 +1497,6 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "",
         "available": false
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg fixed on time 24M",
-        "type": "fixed",
-        "fixed": 12.9,
-        "rate": 0.145,
-        "rate_base": 0.286,
-        "fixed_base": 12.9,
-        "fixed_disc": 12.9,
-        "rate_disc": 0.145,
-        "has_discount": true,
-        "disc_cond": "Εμπρόθεσμη Πληρωμή",
-        "duration": "24",
-        "notes": "",
-        "available": true
       },
       {
         "prov": "PROTERGIA",
@@ -4045,6 +4029,22 @@ window.TARIFFS = {
         "available": false
       },
       {
+        "prov": "PROTERGIA",
+        "name": "Επαγγελματικό 1 Value Sure 24M",
+        "type": "fixed",
+        "fixed": 15.9,
+        "rate": 0.179,
+        "rate_base": 0.279,
+        "fixed_base": 15.9,
+        "fixed_disc": 15.9,
+        "rate_disc": 0.179,
+        "has_discount": true,
+        "disc_cond": "Εμπρόθεσμη Πληρωμή",
+        "duration": "24",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ΗΡΩΝ",
         "name": "Blue Generous Max BUSINESS 5",
         "type": "fixed",
@@ -4266,7 +4266,7 @@ window.TARIFFS = {
         "disc_cond": "Εμπρόθεσμη Πληρωμή με Συνέπεια.",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΖΕΝΙΘ",
@@ -4542,22 +4542,6 @@ window.TARIFFS = {
       },
       {
         "prov": "PROTERGIA",
-        "name": "Value Seasonal Επαγγελματικό 1 (2026)",
-        "type": "float",
-        "fixed": 0.0,
-        "rate": 0.29339,
-        "rate_base": 0.29339,
-        "fixed_base": 0.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "Μη εμπορικά διαθέσιμο",
-        "available": true
-      },
-      {
-        "prov": "PROTERGIA",
         "name": "Επαγγελματικό 3 Value Simple 2.0",
         "type": "float",
         "fixed": 0.0,
@@ -4571,6 +4555,22 @@ window.TARIFFS = {
         "duration": "12",
         "notes": "",
         "available": true
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Value Seasonal Επαγγελματικό 1 (2026)",
+        "type": "float",
+        "fixed": 0.0,
+        "rate": 0.29339,
+        "rate_base": 0.29339,
+        "fixed_base": 0.0,
+        "fixed_disc": null,
+        "rate_disc": null,
+        "has_discount": false,
+        "disc_cond": "",
+        "duration": "12",
+        "notes": "Μη εμπορικά διαθέσιμο",
+        "available": false
       },
       {
         "prov": "ΔΕΗ",
