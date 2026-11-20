@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17 04:37",
+  "generated_at": "2026-11-20 04:37",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1115,22 +1115,6 @@
         "available": true
       },
       {
-        "prov": "ΔΕΗ",
-        "name": "myHomeEnterTwo 10.26",
-        "type": "fixed",
-        "fixed": 8.82,
-        "rate": 0.1519,
-        "rate_base": 0.155,
-        "fixed_base": 9.0,
-        "fixed_disc": 8.82,
-        "rate_disc": 0.1519,
-        "has_discount": true,
-        "disc_cond": "Πάγια Εντολή",
-        "duration": "24",
-        "notes": "Εμπορικά διαθέσιμο έως και 08.11.2026. Δωρεάν υπηρεσία Green Pass για 2 μήνες. Μετά το πέρας των 2 μηνών η χρέωση είναι 0,95€/μήνα συν ΦΠΑ 6%.",
-        "available": true
-      },
-      {
         "prov": "VOLTON",
         "name": "Volton Blue Flat 18M v3",
         "type": "fixed",
@@ -1388,22 +1372,6 @@
       },
       {
         "prov": "ΔΕΗ",
-        "name": "myHome Enter 07.26",
-        "type": "fixed",
-        "fixed": 7.35,
-        "rate": 0.1421,
-        "rate_base": 0.145,
-        "fixed_base": 7.5,
-        "fixed_disc": 7.35,
-        "rate_disc": 0.1421,
-        "has_discount": true,
-        "disc_cond": "Πάγια Εντολή",
-        "duration": "12",
-        "notes": "Δωρεάν η υπηρεσία Green Pass Home για τους 2 πρώτους μήνες μετά το πέρας των οποίων άρχεται η χρέωσή της. Η υπηρεσία ενεργοποιείται με την ενεργοποίηση του προϊόντος.",
-        "available": true
-      },
-      {
-        "prov": "ΔΕΗ",
         "name": "myHome Plan 06.26",
         "type": "fixed",
         "fixed": 7.35,
@@ -1416,7 +1384,23 @@
         "disc_cond": "Πάγια Εντολή",
         "duration": "12",
         "notes": "Υπολογισμός της έκπτωσης επί των Χρεώσεων Προμήθειας στους εκκαθαριστικούς λογαριασμούς. Δεν προσφέρεται σε πελάτες με ενεργό ενεργειακό συμψηφισμό ή τηλεμετρούμενο μετρητή.",
-        "available": true
+        "available": false
+      },
+      {
+        "prov": "ΔΕΗ",
+        "name": "myHome Enter 07.26",
+        "type": "fixed",
+        "fixed": 7.35,
+        "rate": 0.1421,
+        "rate_base": 0.145,
+        "fixed_base": 7.5,
+        "fixed_disc": 7.35,
+        "rate_disc": 0.1421,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "12",
+        "notes": "Δωρεάν η υπηρεσία Green Pass Home για τους 2 πρώτους μήνες μετά το πέρας των οποίων άρχεται η χρέωσή της. Η υπηρεσία ενεργοποιείται με την ενεργοποίηση του προϊόντος.",
+        "available": false
       },
       {
         "prov": "NRG",
@@ -1688,6 +1672,22 @@
         "disc_cond": "Έκπτωση Συνέπειας",
         "duration": "12",
         "notes": "",
+        "available": false
+      },
+      {
+        "prov": "ΔΕΗ",
+        "name": "myHomeEnterTwo 10.26",
+        "type": "fixed",
+        "fixed": 8.82,
+        "rate": 0.1519,
+        "rate_base": 0.155,
+        "fixed_base": 9.0,
+        "fixed_disc": 8.82,
+        "rate_disc": 0.1519,
+        "has_discount": true,
+        "disc_cond": "Πάγια Εντολή",
+        "duration": "24",
+        "notes": "Εμπορικά διαθέσιμο έως και 08.11.2026. Δωρεάν υπηρεσία Green Pass για 2 μήνες. Μετά το πέρας των 2 μηνών η χρέωση είναι 0,95€/μήνα συν ΦΠΑ 6%.",
         "available": false
       },
       {
@@ -2137,22 +2137,6 @@
         "duration": "12",
         "notes": "Για τις πρώτες 120 ημέρες της σύμβασης (4 μήνες), η έκπτωση συνέπειας διαμορφώνεται σε 0.180 €/kWh και η τιμή μετά την εφαρμογή της σε 0,119 €/kWh",
         "available": true
-      },
-      {
-        "prov": "NRG",
-        "name": "nrg 100",
-        "type": "float",
-        "fixed": 0.0,
-        "rate": 0.18182,
-        "rate_base": 0.18182,
-        "fixed_base": 0.0,
-        "fixed_disc": null,
-        "rate_disc": null,
-        "has_discount": false,
-        "disc_cond": "",
-        "duration": "12",
-        "notes": "Τιμολόγιο που χρεώνει τιμή κλίμακας 15€ επιπλέον για κάθε 100 κWh κατανάλωσης μέχρι τις 500 kWh. (Ενδεικτική Tιμή (€/kWh) για κατανάλωση ίση με 330 kWh / μήνα (βάσει των μέσων καταναλώσεων οικιακών πελατών.",
-        "available": false
       },
       {
         "prov": "PROTERGIA",
@@ -3978,7 +3962,7 @@
         "disc_cond": "Πάγια Εντολή",
         "duration": "12",
         "notes": "Εμπορικά διαθέσιμο έως και 08.11.2026. Για παροχές με εγκατεστημένη ισχύ έως 35 kVA",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΦΥΣΙΚΟ ΑΕΡΙΟ ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΙΑ ΕΝΕΡΓΕΙΑΣ",
@@ -6718,7 +6702,7 @@
         "disc_cond": "",
         "duration": "24",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
