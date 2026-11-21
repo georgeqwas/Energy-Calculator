@@ -1,5 +1,5 @@
 window.TARIFFS = {
-  "generated_at": "2026-11-20 04:37",
+  "generated_at": "2026-11-21 04:37",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -2182,7 +2182,7 @@ window.TARIFFS = {
         "rate_disc": null,
         "has_discount": false,
         "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
+        "duration": "12",
         "notes": "",
         "available": true
       },
@@ -3944,7 +3944,7 @@ window.TARIFFS = {
         "rate_disc": 0.17,
         "has_discount": true,
         "disc_cond": "Συνέπεια",
-        "duration": "Αορίστου Διάρκειας",
+        "duration": "12",
         "notes": "",
         "available": true
       },
@@ -4280,7 +4280,7 @@ window.TARIFFS = {
         "rate_disc": null,
         "has_discount": false,
         "disc_cond": "",
-        "duration": "Αορίστου Διάρκειας",
+        "duration": "12",
         "notes": "",
         "available": true
       },
