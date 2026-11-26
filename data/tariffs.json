@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24 04:38",
+  "generated_at": "2026-11-26 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -1294,11 +1294,11 @@
         "prov": "VOLTON",
         "name": "Volton Blue Flat 24M",
         "type": "fixed",
-        "fixed": 9.9,
+        "fixed": 13.9,
         "rate": 0.14,
         "rate_base": 0.28,
-        "fixed_base": 9.9,
-        "fixed_disc": 9.9,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
         "rate_disc": 0.14,
         "has_discount": true,
         "disc_cond": "Συνέπεια 50%",
@@ -1912,7 +1912,7 @@
         "disc_cond": "Συνέπεια 35.71%",
         "duration": "12",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,130€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1928,7 +1928,7 @@
         "disc_cond": "Συνέπεια 35.71%",
         "duration": "18",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,125€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1944,7 +1944,7 @@
         "disc_cond": "Συνέπεια 35.71%",
         "duration": "24",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,120€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1960,7 +1960,7 @@
         "disc_cond": "Συνέπεια 41.07%",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -1976,7 +1976,7 @@
         "disc_cond": "Συνέπεια 41.07%",
         "duration": "18",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρεται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,130€/kWh. Ισχύει για νέους πελάτες.",
-        "available": true
+        "available": false
       },
       {
         "prov": "NRG",
@@ -2091,6 +2091,22 @@
         "available": false
       },
       {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 12M v2",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.175,
+        "rate_base": 0.28,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.175,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 37.5%",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "PROTERGIA",
         "name": "Value Sure 12M 4.0",
         "type": "fixed",
@@ -2136,6 +2152,22 @@
         "disc_cond": "Έκπτωση συνέπειας 0.120 €/kWh",
         "duration": "12",
         "notes": "Για τις πρώτες 120 ημέρες της σύμβασης (4 μήνες), η έκπτωση συνέπειας διαμορφώνεται σε 0.180 €/kWh και η τιμή μετά την εφαρμογή της σε 0,119 €/kWh",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Fixed Plus 18M v3",
+        "type": "fixed",
+        "fixed": 12.9,
+        "rate": 0.18,
+        "rate_base": 0.28,
+        "fixed_base": 12.9,
+        "fixed_disc": 12.9,
+        "rate_disc": 0.18,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 35.71%",
+        "duration": "18",
+        "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρεται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,145€/kWh. Ισχύει για νέους πελάτες.",
         "available": true
       },
       {
@@ -3706,7 +3738,7 @@
         "disc_cond": "Συνέπεια 42.86%",
         "duration": "24",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "ΔΕΗ",
@@ -4058,7 +4090,7 @@
         "disc_cond": "Συνέπεια 41.07%",
         "duration": "12",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,135€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -4074,7 +4106,7 @@
         "disc_cond": "Συνέπεια 41.07%",
         "duration": "18",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,130€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -4090,7 +4122,7 @@
         "disc_cond": "Συνέπεια 41.07%",
         "duration": "24",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρονται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,125€/kWh. Ισχύει για νέους πελάτες.\nΜη εμπορικά διαθέσιμο από 09/11/2026.",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -4106,7 +4138,7 @@
         "disc_cond": "Συνέπεια 35.71%",
         "duration": "12",
         "notes": "",
-        "available": true
+        "available": false
       },
       {
         "prov": "VOLTON",
@@ -4122,7 +4154,7 @@
         "disc_cond": "Συνέπεια 35.71%",
         "duration": "18",
         "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρεται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,150€/kWh. Ισχύει για νέους πελάτες.",
-        "available": true
+        "available": false
       },
       {
         "prov": "NRG",
@@ -4173,6 +4205,22 @@
         "available": false
       },
       {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 24M v2",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.19,
+        "rate_base": 0.28,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.19,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 32.14%",
+        "duration": "24",
+        "notes": "",
+        "available": true
+      },
+      {
         "prov": "ENERWAVE",
         "name": "Reward Stable for Business Γ22-Γ23",
         "type": "fixed",
@@ -4187,6 +4235,38 @@
         "duration": "12",
         "notes": "Το προϊόν ήταν εμπορικά διαθέσιμο από τις 18/05/2026. έως τις 30/09/2026. Υφίσταται έκπτωση συνέπειας 0,065 €/kWh, η οποία εφαρμόζεται καθ’ όλη τη διάρκεια της σύμβασης και το πρώτο έτος της Διάρκειας Ανανέωσης.",
         "available": false
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Flat 12M v2",
+        "type": "fixed",
+        "fixed": 15.9,
+        "rate": 0.195,
+        "rate_base": 0.28,
+        "fixed_base": 15.9,
+        "fixed_disc": 15.9,
+        "rate_disc": 0.195,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 30.36%",
+        "duration": "12",
+        "notes": "",
+        "available": true
+      },
+      {
+        "prov": "VOLTON",
+        "name": "Volton Blue Fixed Plus 18M v3",
+        "type": "fixed",
+        "fixed": 13.9,
+        "rate": 0.195,
+        "rate_base": 0.28,
+        "fixed_base": 13.9,
+        "fixed_disc": 13.9,
+        "rate_disc": 0.195,
+        "has_discount": true,
+        "disc_cond": "Συνέπεια 30.36%",
+        "duration": "18",
+        "notes": "Για τους τρεις (3) πρώτους μήνες εκπροσώπησης, προσφέρεται επιπλέον έκπτωση στη βασική τιμή προμήθειας, με την τελική τιμή να είναι ίση με 0,165€/kWh. Ισχύει για νέους πελάτες.",
+        "available": true
       },
       {
         "prov": "ENERWAVE",
