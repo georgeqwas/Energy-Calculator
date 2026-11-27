@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26 04:38",
+  "generated_at": "2026-11-27 04:38",
   "source": "ΡΑΑΕΥ / energycost.gr",
   "is_sample": false,
   "regulated_estimate_eur_per_kwh": {
@@ -5597,6 +5597,22 @@
         "duration": "24",
         "notes": "Σταθερή Χρέωση για τους πρώτους 12 μήνες: 0,055 €/kWh | Κυμαινόμενη Χρέωση μετά τους 12 μήνες: Μαρ-25 0,05905 €/kWh",
         "available": false
+      },
+      {
+        "prov": "PROTERGIA",
+        "name": "Οκιακό Αυτόνομο Value Gas Sure 3.0",
+        "type": "fixed",
+        "fixed": 14.9,
+        "rate": 0.057,
+        "rate_base": 0.077,
+        "fixed_base": 14.9,
+        "fixed_disc": 14.9,
+        "rate_disc": 0.057,
+        "has_discount": true,
+        "disc_cond": "Έκπτωση 20.00€/MWh εφόσον η παροχή ηλεκτρικής ενέργειας του Πελάτη εκπροσωπείται από τον Προμηθευτή.",
+        "duration": "12",
+        "notes": "Η εφαρμογή της Ρήτρας Πρόωρης Αποχώρησης αναστέλλεται έως την ενσωμάτωση της Οδηγίας (ΕΕ) 2024/1788 στην ελληνική έννομη τάξη",
+        "available": true
       },
       {
         "prov": "ΕΛΙΝΟΙΛ",
